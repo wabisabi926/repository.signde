@@ -88,7 +88,7 @@
             <icon>resources/icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="plugin.video.themoviedb.helper" version="6.15.0" name="TMDb Helper" provider-name="jurialmunkey">
+</addon><addon id="plugin.video.themoviedb.helper" version="6.15.1" name="TMDb Helper" provider-name="jurialmunkey">
 <requires>
   <import addon="xbmc.python" version="3.0.1" />
   <import addon="script.module.requests" version="2.9.1" />
@@ -169,7 +169,7 @@
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="resource.language.de_de" version="11.0.907" name="German" provider-name="Team Kodi, jamal2362">
+</addon><addon id="resource.language.de_de" version="11.0.911" name="German" provider-name="Team Kodi, jamal2362">
   <requires>
     <import addon="kodi.resource" version="1.0.0" />
   </requires>
@@ -219,7 +219,7 @@
 			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
 		</assets>
 	</extension>
-</addon><addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.31">
+</addon><addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.32">
   <requires>
     <import addon="xbmc.python" version="3.0.1" />
     <import addon="script.module.requests" version="2.9.1" />
