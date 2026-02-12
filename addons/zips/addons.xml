@@ -549,7 +549,7 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (Hybrid)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="31.1.1.3">
+</addon><addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (Hybrid)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="32.1.1.3">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" />
@@ -1067,7 +1067,7 @@
     <description lang="pt_BR">PM3.HD (Project Mayhem III High Definition)é baseado no design de antiga  skin Project Mayhem III por Chokemaniac.[CR][CR]Esta skin foi criada quando moveu-se da plataforma xbox para PC's. Pessoas estavam querendo usar o XBMC na TV de alta definição em 720p e 1080p e ele veio ao meu conhecimento que o velho padrão da skin Project Mayhem III parecia perfeita em baixa resolução no xbox, mas parecia muito blocky quando ampliadas para alta definição. Então PM3.HD foi criado para preencher a lacuna para usuários de alta definição.</description>
     <platform>all</platform>
   </extension>
-</addon><addon id="skin.rapier" version="30.13.0.14" name="Rapier (Hybrid)" provider-name="Scarfa, Gade, jamal2362">
+</addon><addon id="skin.rapier" version="31.13.0.14" name="Rapier (Hybrid)" provider-name="Scarfa, Gade, jamal2362">
   <requires>
     <import addon="xbmc.gui" version="5.17.0" />
     <import addon="script.favourites" version="4.0.9" />
