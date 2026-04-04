@@ -527,7 +527,7 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="35.1.1.3">
+</addon><addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="35.1.1.7">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" />
