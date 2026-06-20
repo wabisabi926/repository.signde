@@ -8,6 +8,7 @@ import os
 import shutil
 import hashlib
 import zipfile
+import html
 from xml.etree import ElementTree
 
 SCRIPT_VERSION = 1
@@ -24,14 +25,15 @@ IGNORE = [
 
 
 def _setup_colors():
-    color = os.system("color")
     console = 0
     if os.name == 'nt':  # Only if we are running on Windows
+        color = os.system("color")
         from ctypes import windll
 
         k = windll.kernel32
         console = k.SetConsoleMode(k.GetStdHandle(-11), 7)
-    return color == 1 or console == 1
+        return color == 1 or console == 1
+    return False
 
 
 _COLOR_ESCAPE = "\x1b[{}m"
@@ -144,8 +146,6 @@ class Generator:
         zip_folder = os.path.join(self.zips_path, addon_id)
         if not os.path.exists(zip_folder):
             os.makedirs(zip_folder)
-
-        self._delete_old_zips(zip_folder)
         
         final_zip = os.path.join(zip_folder, "{0}-{1}.zip".format(addon_id, version))
 
@@ -183,21 +183,8 @@ class Generator:
                 color_text(size, 'yellow'),
             )
         )
+        return final_zip
         
-    def _delete_old_zips(self, zip_folder):
-        """
-        Deletes all .zip files in the transferred folder.
-        """
-        if os.path.exists(zip_folder):
-            for f in os.listdir(zip_folder):
-                if f.endswith(".zip"):
-                    try:
-                        os.remove(os.path.join(zip_folder, f))
-                        print(f"Old ZIP file deleted: {f}")
-                    except Exception as e:
-                        print(f"Error when deleting {f}: {e}")
-
-
     def _copy_meta_files(self, addon_id, addon_folder):
         """
         Copy the addon.xml and relevant art files into the relevant folders in the repository.
@@ -210,7 +197,7 @@ class Generator:
         for ext in root.findall("extension"):
             if ext.get("point") in ["xbmc.addon.metadata", "kodi.addon.metadata"]:
                 assets = ext.find("assets")
-                if not assets:
+                if assets is None:
                     continue
                 for art in [a for a in assets if a.text]:
                     copyfiles.append(os.path.normpath(art.text))
@@ -227,6 +214,45 @@ class Generator:
                 os.makedirs(asset_path)
 
             shutil.copy(addon_path, zips_path)
+
+    def _copy_root_repository_zip(self, addon_root, zip_path, addon_id, version):
+        """
+        Copy repository installer zips to the project root.
+        """
+        if not any(
+            ext.get("point") == "xbmc.addon.repository"
+            for ext in addon_root.findall("extension")
+        ):
+            return
+
+        root_path = os.path.dirname(os.path.abspath(self.release_path))
+        root_zip = os.path.join(
+            root_path, "{0}-{1}.zip".format(addon_id, version)
+        )
+        shutil.copy(zip_path, root_zip)
+        self._write_root_repository_index(root_path)
+        print(
+            "Root repository ZIP updated: {}".format(
+                color_text(root_zip, 'yellow')
+            )
+        )
+
+    def _write_root_repository_index(self, root_path):
+        """
+        Write a simple root index of repository installer zips for Kodi file manager.
+        """
+        links = [
+            f for f in sorted(os.listdir(root_path))
+            if f.startswith("repository.") and f.endswith(".zip")
+        ]
+        body = "\n".join(
+            '<a href="{0}">{0}</a><br>'.format(html.escape(f, quote=True))
+            for f in links
+        )
+        self._save_file(
+            "<!DOCTYPE html>\n<html><body>\n{}\n</body></html>\n".format(body),
+            file=os.path.join(root_path, "index.html")
+        )
 
     def _generate_addons_file(self, addons_xml_path):
         """
@@ -249,6 +275,7 @@ class Generator:
         ]
 
         addon_xpath = "addon[@id='{}']"
+        active_ids = set()
         changed = False
         for addon in folders:
             try:
@@ -257,9 +284,11 @@ class Generator:
                 addon_root = addon_xml.getroot()
                 id = addon_root.get('id')
                 version = addon_root.get('version')
+                active_ids.add(id)
 
-                self._create_zip(addon, id, version)
+                zip_path = self._create_zip(addon, id, version)
                 self._copy_meta_files(addon, os.path.join(self.zips_path, id))
+                self._copy_root_repository_zip(addon_root, zip_path, id, version)
 
                 addon_entry = addons_root.find(addon_xpath.format(id))
                 if addon_entry is not None and addon_entry.get('version') != version:
@@ -277,6 +306,11 @@ class Generator:
                         color_text(id, 'yellow'), color_text(e, 'red')
                     )
                 )
+
+        for addon_entry in list(addons_root.findall('addon')):
+            if addon_entry.get('id') not in active_ids:
+                addons_root.remove(addon_entry)
+                changed = True
 
         if changed:
             addons_root[:] = sorted(addons_root, key=lambda addon: addon.get('id'))
