@@ -12,15 +12,17 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
             - Protocol: Web server directory (HTTPS)
             - Server address: signde.github.io
             - Remote path: repository.signde
-    - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.0.zip
+    - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.1.zip
 4. Install the skin from repo: signde Repository > Look and Feel > Skins
 5. Display advanced process info, navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Modern
 
 ## Changes
 
 - June 21st 2026
-    - Restored Arctic Fuse 2 (v2.12.12)
-    - Restored Arctic Zephyr Reloaded (v3.0.3)
+    - Restored Confluence (v60.5.1.3)
+    - Restored Arctic Zephyr Reloaded (v60.3.0.3)
+    - Restored Arctic Fuse 2 (v96.2.12.12)
 - June 20th 2026
-    - Initial repo creation
-    - Restored Arctic Fuse 3 (v3.2.9, behind upstream)
+    - Fixed repo branch paths (v1.1)
+    - Restored Arctic Fuse 3 (v56.3.2.9, behind upstream)
+    - Initial repo creation (v1.0)
