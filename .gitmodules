@@ -2,10 +2,10 @@
 	path = addons/skin.arctic.fuse.2
 	url = https://github.com/signde/skin.arctic.fuse.2.git
 	branch = omega
-#[submodule "addons/skin.arctic.zephyr.mod"]
-#	path = addons/skin.arctic.zephyr.mod
-#	url = https://github.com/CE-Repo/skin.arctic.zephyr.mod.git
-#	branch = master
+[submodule "addons/skin.arctic.zephyr.mod"]
+	path = addons/skin.arctic.zephyr.mod
+	url = https://github.com/signde/skin.arctic.zephyr.mod.git
+	branch = master
 [submodule "addons/script.texturemaker"]
 	path = addons/script.texturemaker
 	url = https://github.com/jurialmunkey/script.texturemaker.git
