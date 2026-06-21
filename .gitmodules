@@ -65,7 +65,7 @@
 [submodule "addons/skin.arctic.fuse.3"]
 	path = addons/skin.arctic.fuse.3
 	url = https://github.com/signde/skin.arctic.fuse.3.git
-	branch = omega-p3i
+	branch = omega
 [submodule "addons/skin.confluence"]
 	path = addons/skin.confluence
 	url = https://github.com/signde/skin.confluence.git
