@@ -19,6 +19,8 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
 ## Changes
 
 - June 21st 2026
+    - Updated Arctic Fuse 3 to v56.3.2.11
+    - Updated Skin Variables dependency to v2.2.2
     - Restored Confluence (v60.5.1.3)
     - Restored Arctic Zephyr Reloaded (v60.3.0.3)
     - Restored Arctic Fuse 2 (v96.2.12.12)
