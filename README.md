@@ -8,5 +8,10 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
 2. Enable "Update official add-ons from: Any repositories" in Kodi Settings > System > Add-ons
 3. Install repository using zip or file manager source
     - Kodi File Manager Source: https://signde.github.io/repository.signde/
+        - File Manager > Add Source > Edit/Add
+            - Protocol: Web server directory (HTTPS)
+            - Server address: signde.github.io
+            - Remote path: repository.signde
     - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.0.zip
 4. Install the skin from repo: signde Repository > Look and Feel > Skins
+5. Display advanced process info, navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Modern
