@@ -14,7 +14,8 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
             - Remote path: repository.signde
     - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.1.zip
 4. Install the skin from repo: signde Repository > Look and Feel > Skins
-5. Display advanced process info, navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Modern
+
+Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Modern.
 
 ## Changes
 
