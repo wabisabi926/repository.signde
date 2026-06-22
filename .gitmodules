@@ -70,3 +70,15 @@
 	path = addons/skin.confluence
 	url = https://github.com/signde/skin.confluence.git
 	branch = master
+[submodule "addons/skin.bingie"]
+	path = addons/skin.bingie
+	url = https://github.com/matke-84/skin.bingie.git
+	branch = omega
+[submodule "addons/script.bingie.helper"]
+	path = addons/script.bingie.helper
+	url = https://github.com/matke-84/script.bingie.helper.git
+	branch = master
+[submodule "addons/plugin.program.autocompletion"]
+	path = addons/plugin.program.autocompletion
+	url = https://github.com/matke-84/plugin.program.autocompletion.git
+	branch = master
