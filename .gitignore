@@ -1,2 +1,4 @@
 __pycache__/
 *.py[cod]
+_local/
+repository.signde.test-*.zip

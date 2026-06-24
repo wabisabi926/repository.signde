@@ -15,17 +15,20 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
     - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.1.zip
 4. Install the skin from repo: signde Repository > Look and Feel > Skins
 
-Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Modern.
+Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Classic/Modern.
 
 ## Changes
 
+- June 24th 2026
+    - Added Bingie support
+    - Fixed small PPI display issues in Arctic Fuse 3, Arctic Fuse 2, Arctic Zephyr Reloaded, and Confluence
 - June 21st 2026
-    - Updated Arctic Fuse 3 to v56.3.2.11
-    - Updated Skin Variables dependency to v2.2.2
-    - Restored Confluence (v60.5.1.3)
-    - Restored Arctic Zephyr Reloaded (v60.3.0.3)
-    - Restored Arctic Fuse 2 (v96.2.12.12)
+    - Updated Arctic Fuse 3
+    - Updated Skin Variables dependency
+    - Restored Confluence
+    - Restored Arctic Zephyr Reloaded
+    - Restored Arctic Fuse 2
 - June 20th 2026
-    - Fixed repo branch paths (v1.1)
-    - Restored Arctic Fuse 3 (v56.3.2.9, behind upstream)
-    - Initial repo creation (v1.0)
+    - Fixed repo branch paths
+    - Restored Arctic Fuse 3
+    - Initial repo creation

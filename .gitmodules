@@ -72,7 +72,7 @@
 	branch = master
 [submodule "addons/skin.bingie"]
 	path = addons/skin.bingie
-	url = https://github.com/matke-84/skin.bingie.git
+	url = https://github.com/signde/skin.bingie.git
 	branch = omega
 [submodule "addons/script.bingie.helper"]
 	path = addons/script.bingie.helper
