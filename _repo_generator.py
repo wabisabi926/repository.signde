@@ -237,13 +237,42 @@ class Generator:
             )
         )
 
+    def _add_repository_metadata(self, addon_root, zip_path, addon_id):
+        """
+        Add generated repository package metadata to an addon entry.
+        """
+        metadata = None
+        for ext in addon_root.findall("extension"):
+            if ext.get("point") in ["xbmc.addon.metadata", "kodi.addon.metadata"]:
+                metadata = ext
+                break
+
+        if metadata is None:
+            return
+
+        for tag in ["size", "path"]:
+            for child in metadata.findall(tag):
+                metadata.remove(child)
+
+        size = ElementTree.Element("size")
+        size.text = str(os.path.getsize(zip_path))
+        metadata.append(size)
+
+        path = ElementTree.Element("path")
+        path.text = "{}/{}".format(addon_id, os.path.basename(zip_path))
+        metadata.append(path)
+
     def _write_root_repository_index(self, root_path):
         """
         Write a simple root index of repository installer zips for Kodi file manager.
         """
         links = [
             f for f in sorted(os.listdir(root_path))
-            if f.startswith("repository.") and f.endswith(".zip")
+            if (
+                f.startswith("repository.")
+                and f.endswith(".zip")
+                and ".test-" not in f
+            )
         ]
         body = "\n".join(
             '<a href="{0}">{0}</a><br>'.format(html.escape(f, quote=True))
@@ -289,9 +318,13 @@ class Generator:
                 zip_path = self._create_zip(addon, id, version)
                 self._copy_meta_files(addon, os.path.join(self.zips_path, id))
                 self._copy_root_repository_zip(addon_root, zip_path, id, version)
+                self._add_repository_metadata(addon_root, zip_path, id)
 
                 addon_entry = addons_root.find(addon_xpath.format(id))
-                if addon_entry is not None and addon_entry.get('version') != version:
+                if addon_entry is not None and (
+                    addon_entry.get('version') != version
+                    or ElementTree.tostring(addon_entry) != ElementTree.tostring(addon_root)
+                ):
                     index = addons_root.findall('addon').index(addon_entry)
                     addons_root.remove(addon_entry)
                     addons_root.insert(index, addon_root)
@@ -312,20 +345,20 @@ class Generator:
                 addons_root.remove(addon_entry)
                 changed = True
 
-        if changed:
-            addons_root[:] = sorted(addons_root, key=lambda addon: addon.get('id'))
-            try:
-                addons_xml.write(
-                    addons_xml_path, encoding="utf-8", xml_declaration=True
-                )
+        addons_root[:] = sorted(addons_root, key=lambda addon: addon.get('id'))
+        try:
+            ElementTree.indent(addons_xml, space="    ")
+            addons_xml.write(
+                addons_xml_path, encoding="utf-8", xml_declaration=True
+            )
 
-                return changed
-            except Exception as e:
-                print(
-                    "An error occurred updating {}!\n{}".format(
-                        color_text(addons_xml_path, 'yellow'), color_text(e, 'red')
-                    )
+            return True
+        except Exception as e:
+            print(
+                "An error occurred updating {}!\n{}".format(
+                    color_text(addons_xml_path, 'yellow'), color_text(e, 'red')
                 )
+            )
 
     def _generate_md5_file(self, addons_xml_path, md5_path):
         """
