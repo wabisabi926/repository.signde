@@ -9,6 +9,7 @@ import shutil
 import hashlib
 import zipfile
 import html
+import re
 from xml.etree import ElementTree
 
 SCRIPT_VERSION = 1
@@ -22,6 +23,7 @@ IGNORE = [
     ".idea",
     "venv",
 ]
+TEST_ZIP_PATTERN = re.compile(r"-test-[0-9]+\.zip$")
 
 
 def _setup_colors():
@@ -89,6 +91,7 @@ class Generator:
         if not os.path.exists(self.zips_path):
             os.makedirs(self.zips_path)
 
+        self._remove_test_zips()
         self._remove_binaries()
 
         if self._generate_addons_file(addons_xml_path):
@@ -98,6 +101,31 @@ class Generator:
 
             if self._generate_md5_file(addons_xml_path, md5_path):
                 print("Successfully updated {}".format(color_text(md5_path, 'yellow')))
+
+    def _remove_test_zips(self):
+        """
+        Remove prerelease ZIPs created for local device testing.
+        """
+
+        for parent, _, filenames in os.walk(self.zips_path):
+            for filename in filenames:
+                if not TEST_ZIP_PATTERN.search(filename):
+                    continue
+
+                test_zip = os.path.join(parent, filename)
+                try:
+                    os.remove(test_zip)
+                    print(
+                        "Removed test ZIP: {}".format(
+                            color_text(test_zip, 'green')
+                        )
+                    )
+                except OSError as error:
+                    print(
+                        "Failed to remove test ZIP {}: {}".format(
+                            color_text(test_zip, 'red'), error
+                        )
+                    )
 
     def _remove_binaries(self):
         """

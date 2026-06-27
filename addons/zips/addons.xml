@@ -492,7 +492,7 @@
             <path>skin.arctic.zephyr.mod/skin.arctic.zephyr.mod-61.3.0.3.zip</path>
         </extension>
     </addon>
-    <addon id="skin.bingie" version="33.2.0.2" name="Bingie (p3i)" provider-name="matke, signde">
+    <addon id="skin.bingie" version="34.2.0.2" name="Bingie (p3i)" provider-name="matke, signde">
         <requires>
             <import version="5.17.0" addon="xbmc.gui" />
             <import addon="script.bingie.helper" version="1.1.2" />
@@ -525,8 +525,8 @@
                 <icon>resources/icon.png</icon>
                 <fanart>resources/fanart.jpg</fanart>
             </assets>
-            <size>28621827</size>
-            <path>skin.bingie/skin.bingie-33.2.0.2.zip</path>
+            <size>28146516</size>
+            <path>skin.bingie/skin.bingie-34.2.0.2.zip</path>
         </extension>
     </addon>
     <addon id="skin.confluence" version="61.5.1.3" name="Confluence (p3i)" provider-name="Jezz_X, Team Kodi, jamal2362">

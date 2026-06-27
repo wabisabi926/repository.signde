@@ -19,6 +19,9 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- June 27th 2026
+    - Bingie: Added missing heading icons on PPI
+    - Bingie: Tweaked DTS-X and Atmos media icon matching - [11](https://github.com/signde/repository.signde/issues/11)
 - June 24th 2026
     - Added Bingie support
     - Fixed small PPI display issues in Arctic Fuse 3, Arctic Fuse 2, Arctic Zephyr Reloaded, and Confluence
