@@ -50,10 +50,6 @@
 #	path = addons/skin.arctic.horizon.2
 #	url = https://github.com/CE-Repo/skin.arctic.horizon.2.git
 #	branch = main
-#[submodule "addons/skin.aeon.nox.silvo"]
-#	path = addons/skin.aeon.nox.silvo
-#	url = https://github.com/CE-Repo/skin.aeon.nox.silvo.git
-#	branch = omega
 #[submodule "addons/script.skinhelper"]
 #	path = addons/script.skinhelper
 #	url = https://github.com/DenDyGH/script.skinhelper.git
@@ -82,3 +78,7 @@
 	path = addons/plugin.program.autocompletion
 	url = https://github.com/matke-84/plugin.program.autocompletion.git
 	branch = master
+[submodule "addons/skin.aeon.nox.silvo"]
+	path = addons/skin.aeon.nox.silvo
+	url = https://github.com/signde/skin.aeon.nox.silvo.git
+	branch = omega
