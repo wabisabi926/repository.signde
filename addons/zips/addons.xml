@@ -359,7 +359,7 @@
             <path>script.wikipedia/script.wikipedia-0.2.0.zip</path>
         </extension>
     </addon>
-    <addon id="skin.aeon.nox.silvo" version="60.10.0.4" name="Aeon Nox: SiLVO (p3i)" provider-name="SiLVO, jamal2362">
+    <addon id="skin.aeon.nox.silvo" version="61.10.0.4" name="Aeon Nox: SiLVO (p3i)" provider-name="SiLVO, jamal2362">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinshortcuts" version="2.0.1" />
@@ -460,9 +460,9 @@
                 <screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
                 <screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
             </assets>
-            <news>[I][COLOR FFFF9800]v10.0.4[/COLOR][/I][CR]- [CR][CR][B]All updates may contain various changes and/or improvements[/B][CR]For a more complete list visit:[CR][I][COLOR FFFF9800]https://github.com/MikeSiLVO/skin.aeon.nox.silvo/commits/master[/COLOR][/I]</news>
-            <size>90010105</size>
-            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-60.10.0.4.zip</path>
+            <news>[I][COLOR FFFF9800]v61.10.0.4[/COLOR][/I][CR]- Minor PPI fixes</news>
+            <size>90010085</size>
+            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-61.10.0.4.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.fuse.2" name="Arctic Fuse 2 (p3i)" provider-name="jurialmunkey, jamal2362" version="97.2.12.12">
@@ -627,11 +627,12 @@
             <license>GPL v2.0</license>
             <forum />
             <source />
+            <news>[I][COLOR FFFF9800]v34.2.0.2[/COLOR][/I][CR]- Added missing heading icons on PPI[CR]- Tweaked DTS-X and Atmos media icon matching</news>
             <assets>
                 <icon>resources/icon.png</icon>
                 <fanart>resources/fanart.jpg</fanart>
             </assets>
-            <size>28146516</size>
+            <size>28146613</size>
             <path>skin.bingie/skin.bingie-34.2.0.2.zip</path>
         </extension>
     </addon>

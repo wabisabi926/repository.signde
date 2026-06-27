@@ -29,6 +29,7 @@
 		<license>GPL v2.0</license>
 		<forum></forum>
 		<source></source>
+		<news>[I][COLOR FFFF9800]v34.2.0.2[/COLOR][/I][CR]- Added missing heading icons on PPI[CR]- Tweaked DTS-X and Atmos media icon matching</news>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>			

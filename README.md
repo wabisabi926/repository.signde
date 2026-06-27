@@ -20,6 +20,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - June 27th 2026
+    - Aeon Nox Silvo: Fixed small PPI display issues
+    - Restored Aeon Nox Silvo
     - Bingie: Added missing heading icons on PPI
     - Bingie: Tweaked DTS-X and Atmos media icon matching - [11](https://github.com/signde/repository.signde/issues/11)
 - June 24th 2026
