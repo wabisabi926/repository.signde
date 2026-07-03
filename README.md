@@ -20,16 +20,17 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - July 3rd 2026
-    - Arctic Zephyr 2 Resurrection: Fixed small PPI display issues
-    - Restored Arctic Zephyr 2 Resurrection
+    - Arctic Zephyr 2 Resurrection v62.1.0.51: Fixed Atmos media badges in library views
+    - Arctic Zephyr 2 Resurrection v61.1.0.51: Fixed small PPI display issues
+    - Restored Arctic Zephyr 2 Resurrection v60.1.0.51
 - June 27th 2026
-    - Aeon Nox Silvo: Fixed small PPI display issues
-    - Restored Aeon Nox Silvo
-    - Bingie: Added missing heading icons on PPI
-    - Bingie: Tweaked DTS-X and Atmos media icon matching - [11](https://github.com/signde/repository.signde/issues/11)
+    - Aeon Nox Silvo v61.10.0.4: Fixed small PPI display issues
+    - Restored Aeon Nox Silvo v60.10.0.4
+    - Bingie v34.2.0.2: Added missing heading icons on PPI
+    - Bingie v34.2.0.2: Tweaked DTS-X and Atmos media icon matching - [11](https://github.com/signde/repository.signde/issues/11)
 - June 24th 2026
-    - Added Bingie support
-    - Fixed small PPI display issues in Arctic Fuse 3, Arctic Fuse 2, Arctic Zephyr Reloaded, and Confluence
+    - Added Bingie support v33.2.0.2
+    - Fixed small PPI display issues in Arctic Fuse 3 v57.3.2.11, Arctic Fuse 2 v97.2.12.12, Arctic Zephyr Reloaded v61.3.0.3, and Confluence v61.5.1.3
 - June 21st 2026
     - Updated Arctic Fuse 3
     - Updated Skin Variables dependency

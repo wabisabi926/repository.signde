@@ -4,6 +4,7 @@
     and then update the md5 and addons.xml file
 """
 
+import argparse
 import os
 import shutil
 import hashlib
@@ -82,9 +83,10 @@ class Generator:
     the checked-out repo.
     """
 
-    def __init__(self, release):
+    def __init__(self, release, folders=None):
         self.release_path = release
         self.zips_path = os.path.join(self.release_path, "zips")
+        self.folders = self._resolve_folders(folders)
         addons_xml_path = os.path.join(self.zips_path, "addons.xml")
         md5_path = os.path.join(self.zips_path, "addons.xml.md5")
 
@@ -102,69 +104,105 @@ class Generator:
             if self._generate_md5_file(addons_xml_path, md5_path):
                 print("Successfully updated {}".format(color_text(md5_path, 'yellow')))
 
+    def _resolve_folders(self, folders):
+        """Validate optional add-on folders while preserving their order."""
+
+        if not folders:
+            return None
+
+        resolved = []
+        release_prefix = self.release_path + os.sep
+        for folder in folders:
+            folder = os.path.normpath(folder)
+            if folder.startswith(release_prefix):
+                folder = folder[len(release_prefix):]
+
+            addon_path = os.path.join(self.release_path, folder)
+            if (
+                os.path.isabs(folder)
+                or os.path.dirname(folder)
+                or not os.path.isdir(addon_path)
+                or not os.path.exists(os.path.join(addon_path, "addon.xml"))
+            ):
+                raise ValueError("Invalid add-on folder: {}".format(folder))
+
+            if folder not in resolved:
+                resolved.append(folder)
+
+        return resolved
+
+    def _selected_paths(self, base_path):
+        """Return selected paths, or the whole base path for a full build."""
+
+        if self.folders is None:
+            return [base_path]
+        return [os.path.join(base_path, folder) for folder in self.folders]
+
     def _remove_test_zips(self):
         """
         Remove prerelease ZIPs created for local device testing.
         """
 
-        for parent, _, filenames in os.walk(self.zips_path):
-            for filename in filenames:
-                if not TEST_ZIP_PATTERN.search(filename):
-                    continue
+        for search_path in self._selected_paths(self.zips_path):
+            for parent, _, filenames in os.walk(search_path):
+                for filename in filenames:
+                    if not TEST_ZIP_PATTERN.search(filename):
+                        continue
 
-                test_zip = os.path.join(parent, filename)
-                try:
-                    os.remove(test_zip)
-                    print(
-                        "Removed test ZIP: {}".format(
-                            color_text(test_zip, 'green')
+                    test_zip = os.path.join(parent, filename)
+                    try:
+                        os.remove(test_zip)
+                        print(
+                            "Removed test ZIP: {}".format(
+                                color_text(test_zip, 'green')
+                            )
                         )
-                    )
-                except OSError as error:
-                    print(
-                        "Failed to remove test ZIP {}: {}".format(
-                            color_text(test_zip, 'red'), error
+                    except OSError as error:
+                        print(
+                            "Failed to remove test ZIP {}: {}".format(
+                                color_text(test_zip, 'red'), error
+                            )
                         )
-                    )
 
     def _remove_binaries(self):
         """
         Removes any and all compiled Python files before operations.
         """
 
-        for parent, dirnames, filenames in os.walk(self.release_path):
-            for fn in filenames:
-                if fn.lower().endswith("pyo") or fn.lower().endswith("pyc"):
-                    compiled = os.path.join(parent, fn)
-                    try:
-                        os.remove(compiled)
-                        print(
-                            "Removed compiled python file: {}".format(
-                                color_text(compiled, 'green')
+        for search_path in self._selected_paths(self.release_path):
+            for parent, dirnames, filenames in os.walk(search_path):
+                for fn in filenames:
+                    if fn.lower().endswith("pyo") or fn.lower().endswith("pyc"):
+                        compiled = os.path.join(parent, fn)
+                        try:
+                            os.remove(compiled)
+                            print(
+                                "Removed compiled python file: {}".format(
+                                    color_text(compiled, 'green')
+                                )
                             )
-                        )
-                    except:
-                        print(
-                            "Failed to remove compiled python file: {}".format(
-                                color_text(compiled, 'red')
+                        except OSError as error:
+                            print(
+                                "Failed to remove compiled python file {}: {}".format(
+                                    color_text(compiled, 'red'), error
+                                )
                             )
-                        )
-            for dir in dirnames:
-                if "pycache" in dir.lower():
-                    compiled = os.path.join(parent, dir)
-                    try:
-                        shutil.rmtree(compiled)
-                        print(
-                            "Removed __pycache__ cache folder: {}".format(
-                                color_text(compiled, 'green')
+                for directory in dirnames:
+                    if "pycache" in directory.lower():
+                        compiled = os.path.join(parent, directory)
+                        try:
+                            shutil.rmtree(compiled)
+                            print(
+                                "Removed __pycache__ cache folder: {}".format(
+                                    color_text(compiled, 'green')
+                                )
                             )
-                        )
-                    except:
-                        print(
-                            "Failed to remove __pycache__ cache folder:  {}".format(
-                                color_text(compiled, 'red')
+                        except OSError as error:
+                            print(
+                                "Failed to remove __pycache__ cache folder {}: {}".format(
+                                    color_text(compiled, 'red'), error
+                                )
                             )
-                        )
 
     def _create_zip(self, folder, addon_id, version):
         """
@@ -317,7 +355,7 @@ class Generator:
             addons_xml = ElementTree.parse(addons_xml_path)
             addons_root = addons_xml.getroot()
 
-        folders = [
+        folders = self.folders or [
             i
             for i in os.listdir(self.release_path)
             if os.path.isdir(os.path.join(self.release_path, i))
@@ -330,6 +368,7 @@ class Generator:
         active_ids = set()
         changed = False
         for addon in folders:
+            id = addon
             try:
                 addon_xml_path = os.path.join(self.release_path, addon, "addon.xml")
                 addon_xml = ElementTree.parse(addon_xml_path)
@@ -363,10 +402,11 @@ class Generator:
                     )
                 )
 
-        for addon_entry in list(addons_root.findall('addon')):
-            if addon_entry.get('id') not in active_ids:
-                addons_root.remove(addon_entry)
-                changed = True
+        if self.folders is None:
+            for addon_entry in list(addons_root.findall('addon')):
+                if addon_entry.get('id') not in active_ids:
+                    addons_root.remove(addon_entry)
+                    changed = True
 
         addons_root[:] = sorted(addons_root, key=lambda addon: addon.get('id'))
         try:
@@ -415,6 +455,19 @@ class Generator:
             )
 
 if __name__ == "__main__":
-    for release in [r for r in KODI_VERSIONS if os.path.exists(r)]:
-        print(release)
-        Generator(release)
+    parser = argparse.ArgumentParser(
+        description="Build all add-ons, or only the specified add-on folders."
+    )
+    parser.add_argument(
+        "folders",
+        nargs="*",
+        help="Optional add-on folders to build, in the requested order.",
+    )
+    args = parser.parse_args()
+
+    try:
+        for release in [r for r in KODI_VERSIONS if os.path.exists(r)]:
+            print(release)
+            Generator(release, args.folders)
+    except ValueError as error:
+        parser.error(str(error))
