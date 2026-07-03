@@ -284,6 +284,23 @@
             <path>script.module.jurialmunkey/script.module.jurialmunkey-0.2.31.zip</path>
         </extension>
     </addon>
+    <addon id="script.skinhelper" name="SkinHelper" version="0.0.4" provider-name="heppen">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0" />
+            <import addon="script.module.pil" />
+        </requires>
+        <extension point="xbmc.python.script" library="default.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">Simple Skin Helper</summary>
+            <description lang="en_GB">This script is made by heppen to help skinning</description>
+            <language />
+            <platform>all</platform>
+            <size>1417</size>
+            <path>script.skinhelper/script.skinhelper-0.0.4.zip</path>
+        </extension>
+    </addon>
     <addon id="script.skinvariables" version="2.2.2" name="Skin Variables" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.0" />

@@ -188,12 +188,7 @@ class Generator:
                         dirs.remove(i)
                     except:
                         pass
-                for f in files:
-                    if f.startswith(i):
-                        try:
-                            files.remove(f)
-                        except:
-                            pass
+                files[:] = [f for f in files if not f.startswith(i)]
 
             archive_root = os.path.abspath(root)[root_len:]
 
