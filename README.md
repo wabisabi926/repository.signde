@@ -20,9 +20,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - July 3rd 2026
+    - Arctic Zephyr 2 Resurrection: Fixed small PPI display issues
     - Restored Arctic Zephyr 2 Resurrection for Kodi Omega
-    - Added the script.skinhelper dependency
-    - Fixed small PPI display issues in Arctic Zephyr 2 Resurrection
 - June 27th 2026
     - Aeon Nox Silvo: Fixed small PPI display issues
     - Restored Aeon Nox Silvo
