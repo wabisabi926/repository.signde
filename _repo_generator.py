@@ -23,7 +23,7 @@ IGNORE = [
     ".idea",
     "venv",
 ]
-TEST_ZIP_PATTERN = re.compile(r"-test-[0-9]+\.zip$")
+TEST_ZIP_PATTERN = re.compile(r"(?:-test-[0-9]+|~test[0-9]+)\.zip$")
 
 
 def _setup_colors():

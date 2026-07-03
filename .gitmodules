@@ -42,18 +42,14 @@
 #	path = addons/skin.embuary
 #	url = https://github.com/CE-Repo/skin.embuary.git
 #	branch = master
-#[submodule "addons/skin.arctic.zephyr.2.resurrection.mod"]
-#	path = addons/skin.arctic.zephyr.2.resurrection.mod
-#	url = https://github.com/CE-Repo/skin.arctic.zephyr.2.resurrection.mod.git
-#	branch = main
 #[submodule "addons/skin.arctic.horizon.2"]
 #	path = addons/skin.arctic.horizon.2
 #	url = https://github.com/CE-Repo/skin.arctic.horizon.2.git
 #	branch = main
-#[submodule "addons/script.skinhelper"]
-#	path = addons/script.skinhelper
-#	url = https://github.com/DenDyGH/script.skinhelper.git
-#	branch = main
+[submodule "addons/script.skinhelper"]
+	path = addons/script.skinhelper
+	url = https://github.com/DenDyGH/script.skinhelper.git
+	branch = main
 #[submodule "addons/script.skin.helper.skinbackup"]
 #	path = addons/script.skin.helper.skinbackup
 #	url = https://github.com/kodi-community-addons/script.skin.helper.skinbackup.git
@@ -81,4 +77,8 @@
 [submodule "addons/skin.aeon.nox.silvo"]
 	path = addons/skin.aeon.nox.silvo
 	url = https://github.com/signde/skin.aeon.nox.silvo.git
+	branch = omega
+[submodule "addons/skin.arctic.zephyr.2.resurrection.mod"]
+	path = addons/skin.arctic.zephyr.2.resurrection.mod
+	url = https://github.com/signde/skin.arctic.zephyr.2.resurrection.mod.git
 	branch = omega
