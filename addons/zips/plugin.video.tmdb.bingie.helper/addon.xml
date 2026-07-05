@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.tmdb.bingie.helper"
-version="1.0.2"
+version="1.0.3"
 name="TMDb Bingie Helper"
 provider-name="jurialmunkey,matke">
 <requires>
@@ -26,6 +26,9 @@ provider-name="jurialmunkey,matke">
   <disclaimer lang="en_GB">Data provided by TMDb TVDb MDbList OMDb FanartTV and Trakt. Some of the information is provided by TheTVDB.com. Please consider supporting them. https://thetvdb.com/subscribe</disclaimer>
   <license>GPL-3.0-or-later</license>
   <website>https://github.com/matke-84/plugin.video.tmdb.bingie.helper</website>
+  <news>
+    [I][COLOR FFFF9800]v1.0.3[/COLOR][/I][CR]- Fixed Trakt sync pagination compatibility
+  </news>
   <assets>
     <icon>icon.png</icon>
     <fanart>fanart.jpg</fanart>

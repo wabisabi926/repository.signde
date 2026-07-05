@@ -19,6 +19,12 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- July 5th 2026
+    - Bingie v35.2.0.2: Fixes for Trakt compatibility
+    - Arctic Fuse 2 v98.2.12.12: Fixes for Trakt compatibility
+    - Arctic Fuse 3 v58.3.2.11: Fixes for Trakt compatibility
+    - Arctic Zephyr 2 Resurrection v63.1.0.51: Fixes for Trakt compatibility
+    - Arctic Zephyr Reloaded v62.3.0.3: Fixes for Trakt compatibility
 - July 3rd 2026
     - Arctic Zephyr 2 Resurrection v62.1.0.51: Fixed Atmos media badges in library views
     - Arctic Zephyr 2 Resurrection v61.1.0.51: Fixed small PPI display issues
