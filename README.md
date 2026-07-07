@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- July 7th 2026
+    - Arctic Zephyr 2 Resurrection v64.1.0.51: Added source-quality media flags and improved Atmos media matching
 - July 5th 2026
     - Bingie v35.2.0.2: Fixes for Trakt compatibility
     - Arctic Fuse 2 v98.2.12.12: Fixes for Trakt compatibility

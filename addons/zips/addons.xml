@@ -574,7 +574,7 @@
             <path>skin.arctic.fuse.3/skin.arctic.fuse.3-58.3.2.11.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="63.1.0.51">
+    <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="64.1.0.51">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinshortcuts" />
@@ -625,12 +625,13 @@
                 <screenshot>resources/screenshot-06.jpg</screenshot>
             </assets>
             <news>
+            [I][COLOR FFFF9800]v64.1.0.51[/COLOR][/I][CR]- Added source-quality media flags[CR]- Improved Atmos media matching[CR][CR]
             [I][COLOR FFFF9800]v63.1.0.51[/COLOR][/I][CR]- Fixes for Trakt compatibility[CR][CR]
             [I][COLOR FFFF9800]v62.1.0.51[/COLOR][/I][CR]- Fixed Atmos media badges in library views[CR][CR]
             [I][COLOR FFFF9800]v61.1.0.51[/COLOR][/I][CR]- Restored p3i support on Kodi Omega[CR]- Minor PPI fixes
         </news>
-            <size>20871383</size>
-            <path>skin.arctic.zephyr.2.resurrection.mod/skin.arctic.zephyr.2.resurrection.mod-63.1.0.51.zip</path>
+            <size>20871853</size>
+            <path>skin.arctic.zephyr.2.resurrection.mod/skin.arctic.zephyr.2.resurrection.mod-64.1.0.51.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.mod" version="62.3.0.3" name="Arctic: Zephyr - Reloaded (p3i)" provider-name="jurialmunkey, beatmasterrs, jamal2362">
