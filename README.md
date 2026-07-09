@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- July 9th 2026
+    - Arctic Fuse 3 v59.3.2.13: Updated to upstream 3.2.13
 - July 7th 2026
     - Arctic Zephyr 2 Resurrection v64.1.0.51: Added source-quality media flags and improved Atmos media matching
 - July 5th 2026

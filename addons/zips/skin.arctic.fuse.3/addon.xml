@@ -1,4 +1,4 @@
-<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362" version="58.3.2.11">
+<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362" version="59.3.2.13">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinvariables" version="2.2.2" />
@@ -34,6 +34,8 @@
         <forum />
         <source />
         <news>
+            [I][COLOR FFFF9800]v59.3.2.13[/COLOR][/I][CR]- Updated to upstream 3.2.13
+
             [I][COLOR FFFF9800]v58.3.2.11[/COLOR][/I][CR]- Fixes for Trakt compatibility
         </news>
         <assets>
