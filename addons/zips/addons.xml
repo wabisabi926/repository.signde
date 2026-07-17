@@ -75,7 +75,7 @@
             <path>plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-6.16.0.zip</path>
         </extension>
     </addon>
-    <addon id="plugin.video.tmdb.bingie.helper" version="1.0.3" name="TMDb Bingie Helper" provider-name="jurialmunkey,matke">
+    <addon id="plugin.video.tmdb.bingie.helper" version="1.0.4" name="TMDb Bingie Helper" provider-name="jurialmunkey,matke">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.requests" version="2.9.1" />
@@ -100,6 +100,7 @@
             <license>GPL-3.0-or-later</license>
             <website>https://github.com/matke-84/plugin.video.tmdb.bingie.helper</website>
             <news>
+    [I][COLOR FFFF9800]v1.0.4[/COLOR][/I][CR]- Fixed Trakt in-progress widgets when episode counts are missing[CR][CR]
     [I][COLOR FFFF9800]v1.0.3[/COLOR][/I][CR]- Fixed Trakt sync pagination compatibility
   </news>
             <assets>
@@ -108,8 +109,8 @@
                 <screenshot>resources/screenshot-01.jpg</screenshot>
                 <screenshot>resources/screenshot-02.jpg</screenshot>
             </assets>
-            <size>4990940</size>
-            <path>plugin.video.tmdb.bingie.helper/plugin.video.tmdb.bingie.helper-1.0.3.zip</path>
+            <size>4991004</size>
+            <path>plugin.video.tmdb.bingie.helper/plugin.video.tmdb.bingie.helper-1.0.4.zip</path>
         </extension>
     </addon>
     <addon id="repository.signde" name="signde Repository" version="1.1" provider-name="signde">
@@ -528,7 +529,7 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-98.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362" version="59.3.2.13">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362, signde" version="60.3.2.13">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.2.2" />
@@ -564,6 +565,8 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v60.3.2.13[/COLOR][/I][CR]- Added optional codec media flags in library footer[CR]- Improved source-quality, HDR10+, Atmos, DTS-X, AV1, VP8, and VP9 media flag matching[CR]- Updated packed media flag assets and channel icons
+
             [I][COLOR FFFF9800]v59.3.2.13[/COLOR][/I][CR]- Updated to upstream 3.2.13
 
             [I][COLOR FFFF9800]v58.3.2.11[/COLOR][/I][CR]- Fixes for Trakt compatibility
@@ -572,8 +575,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>55737336</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-59.3.2.13.zip</path>
+            <size>48849466</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-60.3.2.13.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="64.1.0.51">

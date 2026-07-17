@@ -8,6 +8,8 @@ import argparse
 import os
 import shutil
 import hashlib
+import subprocess
+import tempfile
 import zipfile
 import html
 import re
@@ -15,6 +17,10 @@ from xml.etree import ElementTree
 
 SCRIPT_VERSION = 1
 KODI_VERSIONS = ["addons"]
+TEXTURE_PACKER = os.environ.get(
+    "TEXTURE_PACKER",
+    os.path.expanduser("~/.local/bin/TexturePacker"),
+)
 IGNORE = [
     ".git",
     ".github",
@@ -204,6 +210,95 @@ class Generator:
                                 )
                             )
 
+    def _ignore_media_pack_source(self, directory, names):
+        """
+        Ignore files that should not be fed back into TexturePacker.
+        """
+        ignored = set()
+        for name in names:
+            if name in IGNORE or name.lower().endswith(".xbt"):
+                ignored.add(name)
+        return ignored
+
+    def _has_loose_media_files(self, media_path):
+        """
+        Return True when a media directory has files to pack.
+        """
+        for root, dirnames, filenames in os.walk(media_path):
+            dirnames[:] = [d for d in dirnames if d not in IGNORE]
+            for filename in filenames:
+                if filename in IGNORE or filename.lower().endswith(".xbt"):
+                    continue
+                return True
+        return False
+
+    def _pack_media_assets(self, folder):
+        """
+        Pack loose media assets into Textures.xbt when an add-on has media files.
+        Existing .xbt files are excluded from the pack source to avoid recursion.
+        """
+        addon_folder = os.path.join(self.release_path, folder)
+        media_path = os.path.join(addon_folder, "media")
+        if not os.path.isdir(media_path) or not self._has_loose_media_files(media_path):
+            return
+
+        if not os.path.exists(TEXTURE_PACKER):
+            raise FileNotFoundError(
+                "TexturePacker not found at {}. Set TEXTURE_PACKER to override.".format(
+                    TEXTURE_PACKER
+                )
+            )
+
+        output_path = os.path.join(media_path, "Textures.xbt")
+        with tempfile.TemporaryDirectory() as temp_dir:
+            pack_source = os.path.join(temp_dir, "media")
+            shutil.copytree(
+                media_path,
+                pack_source,
+                ignore=self._ignore_media_pack_source,
+            )
+            result = subprocess.run(
+                [
+                    TEXTURE_PACKER,
+                    "-input",
+                    pack_source,
+                    "-output",
+                    output_path,
+                    "-dupecheck",
+                ],
+                capture_output=True,
+                text=True,
+            )
+
+        if result.returncode != 0:
+            output = "\n".join(
+                line for line in [result.stdout, result.stderr] if line
+            ).strip()
+            raise RuntimeError("TexturePacker failed for {}:\n{}".format(folder, output))
+
+        warning_count = sum(
+            1
+            for line in (result.stdout + result.stderr).splitlines()
+            if "warning" in line.lower()
+        )
+        message = "Packed media assets: {}".format(color_text(output_path, 'green'))
+        if warning_count:
+            message += " ({} warning{})".format(
+                warning_count,
+                "" if warning_count == 1 else "s",
+            )
+        print(message)
+
+    def _should_zip_file(self, addon_folder, fullpath):
+        """
+        Skip loose media files in add-on packages once Textures.xbt has been generated.
+        """
+        relative_path = os.path.relpath(fullpath, addon_folder)
+        path_parts = relative_path.split(os.sep)
+        if path_parts[0] == "media":
+            return os.path.basename(fullpath).lower().endswith(".xbt")
+        return True
+
     def _create_zip(self, folder, addon_id, version):
         """
         Creates a zip file in the zips directory for the given addon.
@@ -232,6 +327,9 @@ class Generator:
 
             for f in files:
                 fullpath = os.path.join(root, f)
+                if not self._should_zip_file(addon_folder, fullpath):
+                    continue
+
                 archive_name = os.path.join(archive_root, f)
                 zip.write(fullpath, archive_name, zipfile.ZIP_DEFLATED)
 
@@ -377,6 +475,7 @@ class Generator:
                 version = addon_root.get('version')
                 active_ids.add(id)
 
+                self._pack_media_assets(addon)
                 zip_path = self._create_zip(addon, id, version)
                 self._copy_meta_files(addon, os.path.join(self.zips_path, id))
                 self._copy_root_repository_zip(addon_root, zip_path, id, version)

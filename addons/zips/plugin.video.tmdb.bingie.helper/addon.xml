@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.tmdb.bingie.helper"
-version="1.0.3"
+version="1.0.4"
 name="TMDb Bingie Helper"
 provider-name="jurialmunkey,matke">
 <requires>
@@ -27,6 +27,7 @@ provider-name="jurialmunkey,matke">
   <license>GPL-3.0-or-later</license>
   <website>https://github.com/matke-84/plugin.video.tmdb.bingie.helper</website>
   <news>
+    [I][COLOR FFFF9800]v1.0.4[/COLOR][/I][CR]- Fixed Trakt in-progress widgets when episode counts are missing[CR][CR]
     [I][COLOR FFFF9800]v1.0.3[/COLOR][/I][CR]- Fixed Trakt sync pagination compatibility
   </news>
   <assets>
