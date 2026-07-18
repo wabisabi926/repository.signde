@@ -529,7 +529,7 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-98.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362, signde" version="60.3.2.13">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362, signde" version="61.3.2.13">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.2.2" />
@@ -565,6 +565,8 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v61.3.2.13[/COLOR][/I][CR]- Fixed L5 active offsets in Player Process Info[CR]- Hid footer media flags in wall views
+
             [I][COLOR FFFF9800]v60.3.2.13[/COLOR][/I][CR]- Added optional codec media flags in library footer[CR]- Improved source-quality, HDR10+, Atmos, DTS-X, AV1, VP8, and VP9 media flag matching[CR]- Updated packed media flag assets and channel icons
 
             [I][COLOR FFFF9800]v59.3.2.13[/COLOR][/I][CR]- Updated to upstream 3.2.13
@@ -575,8 +577,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>48849466</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-60.3.2.13.zip</path>
+            <size>48849480</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-61.3.2.13.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="64.1.0.51">

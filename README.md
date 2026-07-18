@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- July 18th 2026
+    - Arctic Fuse 3 v61.3.2.13: Fixed L5 active offsets in PPI and hid footer media flags in wall views
 - July 17th 2026
     - Arctic Fuse 3 v60.3.2.13: Added optional codec media flags in library footer, updated media flag icons, and improved media flag matching
     - TMDb Bingie Helper v1.0.4: Fixed Trakt in-progress widgets when episode counts are missing
