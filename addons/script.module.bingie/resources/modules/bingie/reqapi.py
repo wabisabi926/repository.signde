@@ -158,7 +158,15 @@ class RequestAPI(object):
         request = self.get_api_request(request=request, postdata=postdata, headers=headers, method=method)
         if not request:
             return {}
-        response = self.translate_xml(request) if is_xml else request.json()
+        try:
+            if is_xml:
+                response = self.translate_xml(request)
+            else:
+                if not request.text or not request.text.strip():
+                    return {}
+                response = request.json()
+        except:
+            return {}
         request.close()
         return response
 

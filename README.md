@@ -15,10 +15,20 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
     - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.1.zip
 4. Install the skin from repo: signde Repository > Look and Feel > Skins
 
-Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > p3i/hybrid > PlayerProcessInfo Display: Classic/Modern.
+Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > avdvplus/p3i > PlayerProcessInfo Display: Classic/Modern.
 
 ## Changes
 
+- July 21st 2026
+    - Arctic Fuse 3 v62.3.2.14: Updated to upstream 3.2.14, improved recovery after updating the active skin, and updated media flag icons
+    - Arctic Fuse 2 v99.2.12.12: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - Aeon Nox Silvo v62.10.0.4: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - Arctic Zephyr 2 Resurrection v65.1.0.51: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - Arctic Zephyr Reloaded v63.3.0.3: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - Bingie v36.2.0.2: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - Confluence v62.5.1.3: Fixed Dolby Vision L5 active-area offsets in Player Process Info
+    - TMDb Bingie Helper v2.1.0.3: Updated to upstream v1.0.3
+    - Bingie Common v1.0.1: Updated to upstream v1.0.1
 - July 18th 2026
     - Arctic Fuse 3 v61.3.2.13: Fixed L5 active offsets in PPI and hid footer media flags in wall views
 - July 17th 2026

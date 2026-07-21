@@ -1,4 +1,4 @@
-<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (p3i)" provider-name="jurialmunkey, jamal2362, signde" version="61.3.2.13">
+<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="62.3.2.14">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinvariables" version="2.2.2" />
@@ -34,6 +34,8 @@
         <forum />
         <source />
         <news>
+            [I][COLOR FFFF9800]v62.3.2.14[/COLOR][/I][CR]- Updated to upstream 3.2.14[CR]- Improved recovery after updating the active skin[CR]- Updated media flag icons
+
             [I][COLOR FFFF9800]v61.3.2.13[/COLOR][/I][CR]- Fixed L5 active offsets in Player Process Info[CR]- Hid footer media flags in wall views
 
             [I][COLOR FFFF9800]v60.3.2.13[/COLOR][/I][CR]- Added optional codec media flags in library footer[CR]- Improved source-quality, HDR10+, Atmos, DTS-X, AV1, VP8, and VP9 media flag matching[CR]- Updated packed media flag assets and channel icons

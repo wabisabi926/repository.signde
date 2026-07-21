@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="64.1.0.51">
+<addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (avdvplus/p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="65.1.0.51">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts"/>
@@ -51,6 +51,7 @@
             <screenshot>resources/screenshot-06.jpg</screenshot>
         </assets>
         <news>
+            [I][COLOR FFFF9800]v65.1.0.51[/COLOR][/I][CR]- Fixed Dolby Vision L5 active-area offsets in Player Process Info[CR][CR]
             [I][COLOR FFFF9800]v64.1.0.51[/COLOR][/I][CR]- Added source-quality media flags[CR]- Improved Atmos media matching[CR][CR]
             [I][COLOR FFFF9800]v63.1.0.51[/COLOR][/I][CR]- Fixes for Trakt compatibility[CR][CR]
             [I][COLOR FFFF9800]v62.1.0.51[/COLOR][/I][CR]- Fixed Atmos media badges in library views[CR][CR]

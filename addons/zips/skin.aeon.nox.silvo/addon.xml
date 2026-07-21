@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.nox.silvo" version="61.10.0.4" name="Aeon Nox: SiLVO (p3i)" provider-name="SiLVO, jamal2362">
+<addon id="skin.aeon.nox.silvo" version="62.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="2.0.1" />
@@ -100,6 +100,6 @@
 			<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
-		<news>[I][COLOR FFFF9800]v61.10.0.4[/COLOR][/I][CR]- Minor PPI fixes</news>
+		<news>[I][COLOR FFFF9800]v62.10.0.4[/COLOR][/I][CR]- Fixed Dolby Vision L5 active-area offsets in Player Process Info[CR][CR][I][COLOR FFFF9800]v61.10.0.4[/COLOR][/I][CR]- Minor PPI fixes</news>
 	</extension>
 </addon>

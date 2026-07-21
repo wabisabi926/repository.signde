@@ -12,7 +12,6 @@ import subprocess
 import tempfile
 import zipfile
 import html
-import re
 from xml.etree import ElementTree
 
 SCRIPT_VERSION = 1
@@ -30,7 +29,11 @@ IGNORE = [
     ".idea",
     "venv",
 ]
-TEST_ZIP_PATTERN = re.compile(r"(?:-test-[0-9]+|~test[0-9]+)\.zip$")
+PRESERVE_TEXTURE_BUNDLES = {
+    "skin.arctic.zephyr.mod",
+    "skin.bingie",
+    "skin.confluence",
+}
 
 
 def _setup_colors():
@@ -99,7 +102,6 @@ class Generator:
         if not os.path.exists(self.zips_path):
             os.makedirs(self.zips_path)
 
-        self._remove_test_zips()
         self._remove_binaries()
 
         if self._generate_addons_file(addons_xml_path):
@@ -143,32 +145,6 @@ class Generator:
         if self.folders is None:
             return [base_path]
         return [os.path.join(base_path, folder) for folder in self.folders]
-
-    def _remove_test_zips(self):
-        """
-        Remove prerelease ZIPs created for local device testing.
-        """
-
-        for search_path in self._selected_paths(self.zips_path):
-            for parent, _, filenames in os.walk(search_path):
-                for filename in filenames:
-                    if not TEST_ZIP_PATTERN.search(filename):
-                        continue
-
-                    test_zip = os.path.join(parent, filename)
-                    try:
-                        os.remove(test_zip)
-                        print(
-                            "Removed test ZIP: {}".format(
-                                color_text(test_zip, 'green')
-                            )
-                        )
-                    except OSError as error:
-                        print(
-                            "Failed to remove test ZIP {}: {}".format(
-                                color_text(test_zip, 'red'), error
-                            )
-                        )
 
     def _remove_binaries(self):
         """
@@ -240,6 +216,19 @@ class Generator:
         addon_folder = os.path.join(self.release_path, folder)
         media_path = os.path.join(addon_folder, "media")
         if not os.path.isdir(media_path) or not self._has_loose_media_files(media_path):
+            return
+
+        if folder in PRESERVE_TEXTURE_BUNDLES:
+            output_path = os.path.join(media_path, "Textures.xbt")
+            if not os.path.isfile(output_path):
+                raise FileNotFoundError(
+                    "Preserved texture bundle not found at {}".format(output_path)
+                )
+            print(
+                "Preserved texture bundle: {}".format(
+                    color_text(output_path, 'green')
+                )
+            )
             return
 
         if not os.path.exists(TEXTURE_PACKER):
@@ -334,6 +323,7 @@ class Generator:
                 zip.write(fullpath, archive_name, zipfile.ZIP_DEFLATED)
 
         zip.close()
+        self._remove_old_addon_zips(zip_folder, final_zip)
         size = convert_bytes(os.path.getsize(final_zip))
         print(
             "Zip created for {} ({}) - {}".format(
@@ -343,6 +333,26 @@ class Generator:
             )
         )
         return final_zip
+
+    def _remove_old_addon_zips(self, zip_folder, current_zip):
+        """Remove superseded packages after the replacement ZIP is complete."""
+
+        current_zip = os.path.abspath(current_zip)
+        for filename in os.listdir(zip_folder):
+            old_zip = os.path.join(zip_folder, filename)
+            if (
+                not filename.lower().endswith(".zip")
+                or os.path.abspath(old_zip) == current_zip
+                or not os.path.isfile(old_zip)
+            ):
+                continue
+
+            os.remove(old_zip)
+            print(
+                "Removed old ZIP: {}".format(
+                    color_text(old_zip, 'green')
+                )
+            )
         
     def _copy_meta_files(self, addon_id, addon_folder):
         """
