@@ -1,3 +1,53 @@
+v1.0.0026 (25.07.2026)
+- Logos requested by @kittmaster
+
+v1.0.0025 (28.06.2026)
+- Logos requested by @shaktoo
+- More logos, mainly less known studios
+
+v1.0.0024 (29.05.2026)
+- Logos requested by @Brynner
+- HBO Asia, HBO Europe, HBO Nordic
+- Youtube Red
+
+v1.0.0023 (2026-05-02)
+- Logos requested by @GBUK83
+- Some more logos
+- Addon de-bloat
+
+v1.0.0021 (2026-03-31)
+- Restoring Visibility in Linux
+
+v1.0.0020 (2026-03-31)
+- Testing new distribution method
+- Specific build for Windows and Android platforms
+- Separation of platforms
+
+v1.0.0019 (2026-03-29)
+- Logo requested by @Wildlife8769
+- More logos, mostly indie studios
+- Testing new distribution method
+
+v1.0.0018 (2026-03-29)
+- Logo requested by @Wildlife8769
+- More logos, mostly indie studios
+
+v1.0.0017 (2026-03-01)
+- Logos requested by @kittmaster, part 7
+
+v1.0.0015 (2026-02-15)
+- Logos requested by @GBUK83
+- Logos requested by @kittmaster, part 6
+- More streaming bundle logos (Paramout+, Starz)
+
+v1.0.0014 (2026-01-30)
+- Logos requested by @maxtherabbit
+- Streaming bundle logos (Amazon, Apple, Roku)
+
+v1.0.0013 (2026-01-15)
+- Logos requested by @kittmaster, part 5
+- Logo requested by @PatK (re-issue)
+
 v1.0.0012 (2025-12-13)
 - Logos requested by @kittmaster, part 4
 - Logo requested by @knedl (re-issue)
