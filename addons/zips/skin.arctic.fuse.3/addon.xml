@@ -1,4 +1,4 @@
-<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="63.3.2.14">
+<addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="63.3.2.15">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinvariables" version="2.2.2" />
@@ -34,6 +34,8 @@
         <forum />
         <source />
         <news>
+            [I][COLOR FFFF9800]v63.3.2.15[/COLOR][/I][CR]- Updated to upstream 3.2.15
+
             [I][COLOR FFFF9800]v63.3.2.14[/COLOR][/I][CR]- Updated media flag icons
 
             [I][COLOR FFFF9800]v62.3.2.14[/COLOR][/I][CR]- Updated to upstream 3.2.14[CR]- Improved recovery after updating the active skin[CR]- Updated media flag icons

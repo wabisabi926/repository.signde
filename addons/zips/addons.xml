@@ -27,7 +27,7 @@
             <path>plugin.program.autocompletion/plugin.program.autocompletion-2.1.3.zip</path>
         </extension>
     </addon>
-    <addon id="plugin.video.themoviedb.helper" version="6.16.0" name="TMDb Helper" provider-name="jurialmunkey">
+    <addon id="plugin.video.themoviedb.helper" version="6.16.3" name="TMDb Helper" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.requests" version="2.9.1" />
@@ -71,8 +71,8 @@
                 <screenshot>resources/screenshot-01.jpg</screenshot>
                 <screenshot>resources/screenshot-02.jpg</screenshot>
             </assets>
-            <size>5051138</size>
-            <path>plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-6.16.0.zip</path>
+            <size>5056527</size>
+            <path>plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-6.16.3.zip</path>
         </extension>
     </addon>
     <addon id="plugin.video.tmdb.bingie.helper" version="2.1.0.3" name="TMDb Bingie Helper" provider-name="jurialmunkey,matke">
@@ -531,7 +531,7 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-99.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="63.3.2.14">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="63.3.2.15">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.2.2" />
@@ -567,6 +567,8 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v63.3.2.15[/COLOR][/I][CR]- Updated to upstream 3.2.15
+
             [I][COLOR FFFF9800]v63.3.2.14[/COLOR][/I][CR]- Updated media flag icons
 
             [I][COLOR FFFF9800]v62.3.2.14[/COLOR][/I][CR]- Updated to upstream 3.2.14[CR]- Improved recovery after updating the active skin[CR]- Updated media flag icons
@@ -583,8 +585,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>48372132</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-63.3.2.14.zip</path>
+            <size>48372861</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-63.3.2.15.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (avdvplus/p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="65.1.0.51">

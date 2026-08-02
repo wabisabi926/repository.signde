@@ -20,6 +20,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - August 2nd 2026
+    - Arctic Fuse 3 v63.3.2.15: Updated to upstream 3.2.15
+    - TMDb Helper v6.16.3: Updated to upstream v6.16.3
     - Arctic Fuse 3 v63.3.2.14: Updated media flag icons
     - Studio Icons - Coloured v1.0.0026: Updated to upstream v1.0.0026
 - July 21st 2026
