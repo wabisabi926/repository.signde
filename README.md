@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- August 7th 2026
+    - Bingie v37.2.0.2: Added back missing VS10 and PPI assets
 - August 2nd 2026
     - Arctic Fuse 3 v63.3.2.15: Updated to upstream 3.2.15
     - TMDb Helper v6.16.3: Updated to upstream v6.16.3

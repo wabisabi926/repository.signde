@@ -29,10 +29,19 @@ IGNORE = [
     ".idea",
     "venv",
 ]
+# Preserve these upstream texture bundles instead of rebuilding them. Their XBTs
+# contain runtime assets that are not available as loose files in the source
+# trees, so replacing a bundle from only the loose files would discard assets.
 PRESERVE_TEXTURE_BUNDLES = {
     "skin.arctic.zephyr.mod",
     "skin.bingie",
     "skin.confluence",
+}
+# Most preserved bundles already contain every loose image and can be packaged
+# alone. Bingie's bundle does not include all of its newer p3i/VS10 media, so its
+# loose media must also be included as a fallback alongside the preserved XBT.
+INCLUDE_LOOSE_MEDIA_WITH_TEXTURE_BUNDLE = {
+    "skin.bingie",
 }
 
 
@@ -280,11 +289,20 @@ class Generator:
 
     def _should_zip_file(self, addon_folder, fullpath):
         """
-        Skip loose media files in add-on packages once Textures.xbt has been generated.
+        Skip loose media files once Textures.xbt has been generated.
+
+        Add-ons configured for hybrid texture packaging retain their existing
+        XBT, which may contain assets unavailable in the source tree, and also
+        include loose media files that may be newer than that bundle.
         """
         relative_path = os.path.relpath(fullpath, addon_folder)
         path_parts = relative_path.split(os.sep)
         if path_parts[0] == "media":
+            if (
+                os.path.basename(addon_folder)
+                in INCLUDE_LOOSE_MEDIA_WITH_TEXTURE_BUNDLE
+            ):
+                return True
             return os.path.basename(fullpath).lower().endswith(".xbt")
         return True
 
