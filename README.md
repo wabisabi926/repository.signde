@@ -1,4 +1,4 @@
-# signde Repository
+# signde repository
 
 Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintained by jamal2362. See [Several skins for CPM builds](https://discourse.coreelec.org/t/several-skins-for-cpm-builds/53514) for screenshots.
 
@@ -12,13 +12,15 @@ Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintain
             - Protocol: Web server directory (HTTPS)
             - Server address: signde.github.io
             - Remote path: repository.signde
-    - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.1.zip
-4. Install the skin from repo: signde Repository > Look and Feel > Skins
+    - ZIP Install: https://signde.github.io/repository.signde/repository.signde-1.2.zip
+4. Install the skin from repo: signde repository > Look and Feel > Skins
 
 Note: Some skins such as AF2/AF3 do not display the updated Player Process Info overlay by default - it must be enabled. Navigate to: Settings > Customizations > avdvplus/p3i > PlayerProcessInfo Display: Classic/Modern.
 
 ## Changes
 
+- August 14th 2026
+    - Arctic Fuse 3 v64.3.2.15: Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
 - August 7th 2026
     - Bingie v37.2.0.2: Added back missing VS10 and PPI assets
 - August 2nd 2026

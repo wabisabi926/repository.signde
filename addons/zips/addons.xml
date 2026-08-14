@@ -112,8 +112,8 @@
             <path>plugin.video.tmdb.bingie.helper/plugin.video.tmdb.bingie.helper-2.1.0.3.zip</path>
         </extension>
     </addon>
-    <addon id="repository.signde" name="signde Repository" version="1.1" provider-name="signde">
-        <extension point="xbmc.addon.repository" name="signde Repository">
+    <addon id="repository.signde" name="signde repository" version="1.2" provider-name="signde">
+        <extension point="xbmc.addon.repository" name="signde repository">
             <dir minversion="21.0.0" maxversion="21.99.99">
                 <info compressed="false">https://signde.github.io/repository.signde/addons/zips/addons.xml</info>
                 <checksum>https://signde.github.io/repository.signde/addons/zips/addons.xml.md5</checksum>
@@ -121,15 +121,15 @@
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>signde Repository</summary>
+            <summary>signde repository</summary>
             <description>Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintained by jamal2362.</description>
             <disclaimer />
             <platform>all</platform>
             <assets>
                 <icon>resources/icon.png</icon>
             </assets>
-            <size>3060381</size>
-            <path>repository.signde/repository.signde-1.1.zip</path>
+            <size>3060380</size>
+            <path>repository.signde/repository.signde-1.2.zip</path>
         </extension>
     </addon>
     <addon id="resource.font.robotocjksc" name="Roboto CJKSC" version="0.0.3" provider-name="jurialmunkey">
@@ -531,7 +531,7 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-99.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="63.3.2.15">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="64.3.2.15">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.2.2" />
@@ -567,6 +567,8 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v64.3.2.15[/COLOR][/I][CR]- Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from jamal2362's Tiny PPI
+
             [I][COLOR FFFF9800]v63.3.2.15[/COLOR][/I][CR]- Updated to upstream 3.2.15
 
             [I][COLOR FFFF9800]v63.3.2.14[/COLOR][/I][CR]- Updated media flag icons
@@ -585,8 +587,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>48372861</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-63.3.2.15.zip</path>
+            <size>48469057</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-64.3.2.15.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (avdvplus/p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="65.1.0.51">
