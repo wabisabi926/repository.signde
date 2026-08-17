@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- August 17th 2026
+    - Aeon Nox Silvo v63.10.0.4: Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
 - August 15th 2026
     - Arctic Horizon 2 v61.0.8.30: Added avdvplus/p3i support and improved Dolby Vision dual-track and L5 active-area information in Player Process Info
 - August 14th 2026
