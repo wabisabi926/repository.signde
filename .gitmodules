@@ -14,10 +14,6 @@
 	path = addons/script.skinvariables
 	url = https://github.com/jurialmunkey/script.skinvariables.git
 	branch = nexus
-#[submodule "addons/script.skin.helper.colorpicker"]
-#	path = addons/script.skin.helper.colorpicker
-#	url = https://github.com/kodi-community-addons/script.skin.helper.colorpicker.git
-#	branch = master
 [submodule "addons/script.module.jurialmunkey"]
 	path = addons/script.module.jurialmunkey
 	url = https://github.com/jurialmunkey/script.module.jurialmunkey.git
@@ -30,10 +26,6 @@
 	path = addons/plugin.video.themoviedb.helper
 	url = https://github.com/jurialmunkey/plugin.video.themoviedb.helper.git
 	branch = nexus
-#[submodule "addons/screensaver.matrix"]
-#	path = addons/screensaver.matrix
-#	url = https://github.com/CE-Repo/screensaver.matrix.git
-#	branch = main
 [submodule "addons/script.wikipedia"]
 	path = addons/script.wikipedia
 	url = https://github.com/signde/script.wikipedia.git
@@ -46,10 +38,6 @@
 	path = addons/script.skinhelper
 	url = https://github.com/DenDyGH/script.skinhelper.git
 	branch = main
-#[submodule "addons/script.skin.helper.skinbackup"]
-#	path = addons/script.skin.helper.skinbackup
-#	url = https://github.com/kodi-community-addons/script.skin.helper.skinbackup.git
-#	branch = master
 [submodule "addons/skin.arctic.fuse.3"]
 	path = addons/skin.arctic.fuse.3
 	url = https://github.com/signde/skin.arctic.fuse.3.git

@@ -1,4 +1,4 @@
-<addon id="skin.arctic.horizon.2" name="Arctic Horizon 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="61.0.8.30">
+<addon id="skin.arctic.horizon.2" name="Arctic Horizon 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="62.0.8.30">
     <requires>
         <import addon="xbmc.gui" version="5.17.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
@@ -20,6 +20,8 @@
         <forum />
         <source />
         <news>
+            [I][COLOR FFFF9800]v62.0.8.30[/COLOR][/I][CR]- Improved Atmos and DTS:X media flag detection
+
             [I][COLOR FFFF9800]v61.0.8.30[/COLOR][/I][CR]- Improved Dolby Vision dual-track and L5 active-area information in Player Process Info
         </news>
         <assets>
