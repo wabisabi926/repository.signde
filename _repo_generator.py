@@ -33,6 +33,7 @@ IGNORE = [
 # contain runtime assets that are not available as loose files in the source
 # trees, so replacing a bundle from only the loose files would discard assets.
 PRESERVE_TEXTURE_BUNDLES = {
+    "skin.arctic.fuse.2",
     "skin.arctic.zephyr.mod",
     "skin.bingie",
     "skin.confluence",
@@ -41,6 +42,7 @@ PRESERVE_TEXTURE_BUNDLES = {
 # alone. Bingie's bundle does not include all of its newer p3i/VS10 media, so its
 # loose media must also be included as a fallback alongside the preserved XBT.
 INCLUDE_LOOSE_MEDIA_WITH_TEXTURE_BUNDLE = {
+    "skin.arctic.fuse.2",
     "skin.bingie",
 }
 
