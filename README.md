@@ -20,6 +20,7 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - August 21st 2026
+    - TMDb Helper v6.16.4: Updated to upstream v6.16.4
     - Arctic Fuse 3 v64.3.2.16: Updated to upstream 3.2.16
     - Arctic Fuse 2 v100.2.12.12: Improved Atmos and DTS:X detection in library information and fixed stale codec information while browsing the library
     - Confluence v63.5.1.3: Improved Atmos and DTS:X detection in library and playback information
