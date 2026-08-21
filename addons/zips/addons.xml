@@ -386,7 +386,7 @@
             <path>script.wikipedia/script.wikipedia-0.2.0.zip</path>
         </extension>
     </addon>
-    <addon id="skin.aeon.nox.silvo" version="63.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
+    <addon id="skin.aeon.nox.silvo" version="64.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinshortcuts" version="2.0.1" />
@@ -488,14 +488,16 @@
                 <screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
             </assets>
             <news>
+			[I][COLOR FFFF9800]v64.10.0.4[/COLOR][/I][CR]- Improved Atmos and DTS:X detection in library views and OSD information
+
 			[I][COLOR FFFF9800]v63.10.0.4[/COLOR][/I][CR]- Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
 
 			[I][COLOR FFFF9800]v62.10.0.4[/COLOR][/I][CR]- Fixed Dolby Vision L5 active-area offsets in Player Process Info
 
 			[I][COLOR FFFF9800]v61.10.0.4[/COLOR][/I][CR]- Minor PPI fixes
 		</news>
-            <size>88668577</size>
-            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-63.10.0.4.zip</path>
+            <size>88668780</size>
+            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-64.10.0.4.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.fuse.2" name="Arctic Fuse 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362" version="100.2.12.12">

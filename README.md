@@ -25,6 +25,7 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
     - Confluence v63.5.1.3: Improved Atmos and DTS:X detection in library and playback information
     - Arctic Horizon 2 v62.0.8.30: Improved Atmos and DTS:X media flag detection
     - Arctic Zephyr 2 Resurrection v66.1.0.51: Improved DTS:X media flag and label detection
+    - Aeon Nox Silvo v64.10.0.4: Improved Atmos and DTS:X detection in library views and OSD information
 - August 17th 2026
     - Aeon Nox Silvo v63.10.0.4: Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
 - August 15th 2026
