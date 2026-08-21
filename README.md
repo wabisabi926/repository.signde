@@ -20,6 +20,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 ## Changes
 
 - August 21st 2026
+    - Arctic Fuse 3 v65.3.2.16: Added an option to hide audio channel-layout artwork and improved media flag compatibility with legacy and NFO codec values
+    - Aeon Nox Silvo v65.10.0.4: Added an option to hide audio channel-layout artwork
     - Arctic Zephyr 2 Resurrection v66.1.0.52: Updated to upstream 1.0.52
     - TMDb Helper v6.16.4: Updated to upstream v6.16.4
     - Arctic Fuse 3 v64.3.2.16: Updated to upstream 3.2.16

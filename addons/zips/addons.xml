@@ -386,7 +386,7 @@
             <path>script.wikipedia/script.wikipedia-0.2.0.zip</path>
         </extension>
     </addon>
-    <addon id="skin.aeon.nox.silvo" version="64.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
+    <addon id="skin.aeon.nox.silvo" version="65.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinshortcuts" version="2.0.1" />
@@ -488,6 +488,8 @@
                 <screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
             </assets>
             <news>
+			[I][COLOR FFFF9800]v65.10.0.4[/COLOR][/I][CR]- Added an option to hide audio channel-layout artwork
+
 			[I][COLOR FFFF9800]v64.10.0.4[/COLOR][/I][CR]- Improved Atmos and DTS:X detection in library views and OSD information
 
 			[I][COLOR FFFF9800]v63.10.0.4[/COLOR][/I][CR]- Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
@@ -496,8 +498,8 @@
 
 			[I][COLOR FFFF9800]v61.10.0.4[/COLOR][/I][CR]- Minor PPI fixes
 		</news>
-            <size>88668780</size>
-            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-64.10.0.4.zip</path>
+            <size>88668902</size>
+            <path>skin.aeon.nox.silvo/skin.aeon.nox.silvo-65.10.0.4.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.fuse.2" name="Arctic Fuse 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362" version="100.2.12.12">
@@ -540,7 +542,7 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-100.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="64.3.2.16">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="65.3.2.16">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.2.2" />
@@ -576,6 +578,8 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v65.3.2.16[/COLOR][/I][CR]- Added an option to hide audio channel-layout artwork[CR]- Improved media flag compatibility with legacy and NFO codec values
+
             [I][COLOR FFFF9800]v64.3.2.16[/COLOR][/I][CR]- Updated to upstream 3.2.16
 
             [I][COLOR FFFF9800]v64.3.2.15[/COLOR][/I][CR]- Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from jamal2362's Tiny PPI
@@ -598,8 +602,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>48470018</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-64.3.2.16.zip</path>
+            <size>48503975</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-65.3.2.16.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.horizon.2" name="Arctic Horizon 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="62.0.8.30">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.nox.silvo" version="64.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
+<addon id="skin.aeon.nox.silvo" version="65.10.0.4" name="Aeon Nox: SiLVO (avdvplus/p3i)" provider-name="SiLVO, jamal2362, signde">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.skinshortcuts" version="2.0.1" />
@@ -101,6 +101,8 @@
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
 		<news>
+			[I][COLOR FFFF9800]v65.10.0.4[/COLOR][/I][CR]- Added an option to hide audio channel-layout artwork
+
 			[I][COLOR FFFF9800]v64.10.0.4[/COLOR][/I][CR]- Improved Atmos and DTS:X detection in library views and OSD information
 
 			[I][COLOR FFFF9800]v63.10.0.4[/COLOR][/I][CR]- Added audio channel-layout artwork and Dolby Vision enhancement-layer indicators from Tiny PPI
