@@ -155,7 +155,7 @@
             <path>resource.font.robotocjksc/resource.font.robotocjksc-0.0.3.zip</path>
         </extension>
     </addon>
-    <addon id="resource.images.studios.coloured" name="Studio Icons - Coloured - Modded" version="1.0.0026" provider-name="lynxstrike">
+    <addon id="resource.images.studios.coloured" name="Studio Icons - Coloured - Modded" version="1.0.0027" provider-name="lynxstrike">
         <extension point="kodi.resource.images" compile="false" type="studios" />
         <requires>
             <import addon="kodi.resource" version="1.0.0" />
@@ -169,13 +169,13 @@
                 <fanart>fanart.jpg</fanart>
             </assets>
             <news>
-			v1.0.0026 (2026-07-25)
-			- Updated to upstream v1.0.0026
+			v1.0.0027 (2026-08-28)
+			- Updated to upstream v1.0.0027
 			- Updated studio logo collection
 			- Enabled macOS compatibility for the XBT distribution
 		</news>
-            <size>66787472</size>
-            <path>resource.images.studios.coloured/resource.images.studios.coloured-1.0.0026.zip</path>
+            <size>67009863</size>
+            <path>resource.images.studios.coloured/resource.images.studios.coloured-1.0.0027.zip</path>
         </extension>
     </addon>
     <addon id="script.bingie.helper" name="Bingie Helper" version="1.1.2" provider-name="cartman.dos, matke">
