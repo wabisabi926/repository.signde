@@ -19,6 +19,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- August 28th 2026
+    - TMDb Helper v6.16.5: Updated to upstream v6.16.5
 - August 21st 2026
     - Arctic Fuse 2 v101.2.12.12: Added optional audio channel-layout artwork, Dolby Vision enhancement-layer indicators, and unified modern Player Process Info styling
     - Arctic Fuse 3 v65.3.2.16: Added an option to hide audio channel-layout artwork and improved media flag compatibility with legacy and NFO codec values
