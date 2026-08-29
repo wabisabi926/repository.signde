@@ -1,6 +1,8 @@
 # signde repository
 
-Repository of skins for cpm/avdvplus/p3i based CoreELEC builds formerly maintained by jamal2362. See [Several skins for CPM builds](https://discourse.coreelec.org/t/several-skins-for-cpm-builds/53514) for screenshots.
+Repository of skins for avdvplus/p3i based CoreELEC builds formerly maintained by jamal2362. 
+
+See the [Kodi forum thread](https://forum.kodi.tv/showthread.php?tid=388348) for more information and discussion.
 
 ## Installation
 
