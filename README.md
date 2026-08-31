@@ -21,6 +21,8 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 
 ## Changes
 
+- August 31st 2026
+    - TMDb Helper v6.16.7: Updated to upstream v6.16.7
 - August 28th 2026
     - TMDb Helper v6.16.5: Updated to upstream v6.16.5
 - August 21st 2026
