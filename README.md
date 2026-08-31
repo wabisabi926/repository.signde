@@ -24,6 +24,7 @@ Note: Some skins such as AF2/AF3 do not display the updated Player Process Info 
 - August 31st 2026
     - TMDb Helper v6.16.7: Updated to upstream v6.16.7
 - August 28th 2026
+    - Studio Icons - Coloured v1.0.0027: Updated to upstream v1.0.0027
     - TMDb Helper v6.16.5: Updated to upstream v6.16.5
 - August 21st 2026
     - Arctic Fuse 2 v101.2.12.12: Added optional audio channel-layout artwork, Dolby Vision enhancement-layer indicators, and unified modern Player Process Info styling
