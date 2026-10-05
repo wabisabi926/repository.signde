@@ -19,6 +19,14 @@ See the [Kodi forum thread](https://forum.kodi.tv/showthread.php?tid=388348) for
 
 ## Changes
 
+- October 5th 2026
+    - Arctic Fuse 3 v72.3.3.7-omega
+        - Updated to upstream v3.3.7
+    - Arctic Fuse 3 v73.3.3.7-piers
+        - Updated to upstream v3.3.7
+    - Skin Variables v2.2.8
+        - Updated to upstream v2.2.8
+
 - October 3rd 2026
     - Arctic Fuse 3 v73.3.3.5-piers
         - Added new v22 Piers fork with optional signde colored media icons
