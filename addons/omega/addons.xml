@@ -27,13 +27,13 @@
             <path>plugin.program.autocompletion/plugin.program.autocompletion-2.1.3.zip</path>
         </extension>
     </addon>
-    <addon id="plugin.video.themoviedb.helper" version="6.21.0" name="TMDb Helper" provider-name="jurialmunkey">
+    <addon id="plugin.video.themoviedb.helper" version="6.22.1" name="TMDb Helper" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.requests" version="2.9.1" />
             <import addon="script.module.pil" version="1.1.7" />
             <import addon="script.module.addon.signals" version="0.0.6" />
-            <import addon="script.module.jurialmunkey" version="0.2.35" />
+            <import addon="script.module.jurialmunkey" version="0.2.39" />
             <import addon="script.module.infotagger" version="0.1.0" />
             <import addon="script.module.qrcode" version="6.1.0" />
         </requires>
@@ -71,8 +71,8 @@
                 <screenshot>resources/screenshot-01.jpg</screenshot>
                 <screenshot>resources/screenshot-02.jpg</screenshot>
             </assets>
-            <size>9613291</size>
-            <path>plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-6.21.0.zip</path>
+            <size>9687938</size>
+            <path>plugin.video.themoviedb.helper/plugin.video.themoviedb.helper-6.22.1.zip</path>
         </extension>
     </addon>
     <addon id="plugin.video.tmdb.bingie.helper" version="2.1.0.3" name="TMDb Bingie Helper" provider-name="jurialmunkey,matke">
@@ -161,6 +161,19 @@
             <path>resource.font.robotocjksc/resource.font.robotocjksc-0.0.3.zip</path>
         </extension>
     </addon>
+    <addon id="resource.images.arctic.backgrounds.surrealist" name="Arctic Backgrounds - Surrealist" version="1.0.2" provider-name="jurialmunkey">
+        <requires>
+            <import addon="kodi.resource" version="1.0.0" />
+        </requires>
+        <extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">Surrealist backgrounds for Arctic</summary>
+            <description lang="en_GB">68 illustrated Surrealist backgrounds covering 41 content types and 27 genres. All images are 1920 x 1080 JPEGs with centered figures and dark side space for blending.</description>
+            <platform>all</platform>
+            <size>83420739</size>
+            <path>resource.images.arctic.backgrounds.surrealist/resource.images.arctic.backgrounds.surrealist-1.0.2.zip</path>
+        </extension>
+    </addon>
     <addon id="resource.images.arctic.splash" name="Arctic Splash" version="1.1.0" provider-name="jurialmunkey">
         <requires>
             <import addon="kodi.resource" version="1.0.0" />
@@ -202,7 +215,7 @@
             <path>resource.images.mediaflags.signde/resource.images.mediaflags.signde-1.0.0.zip</path>
         </extension>
     </addon>
-    <addon id="resource.images.studios.coloured" name="Studio Icons - Coloured - Modded" version="1.0.0028" provider-name="lynxstrike">
+    <addon id="resource.images.studios.coloured" name="Studio Icons - Coloured - Modded" version="1.0.0029" provider-name="lynxstrike">
         <extension point="kodi.resource.images" compile="false" type="studios" />
         <requires>
             <import addon="kodi.resource" version="1.0.0" />
@@ -210,22 +223,17 @@
         <extension point="xbmc.addon.metadata">
             <summary lang="en">Studio Icons – A clean, unified pack that makes your Kodi library shine</summary>
             <description lang="en">Bring your Kodi library to life with Color Studio Icons – Modded. This addon delivers a full suite of studio logos in bold, uniform designs, ensuring your media collection looks sharp, consistent, and up-to-date across all versions of Kodi.</description>
-            <platform>linux android osx</platform>
+            <platform>linux android</platform>
             <assets>
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <news>
-            v1.0.0028 (2026-09-29)
-            - Updated to upstream v1.0.0028 with additional studio logos
-
-            v1.0.0027 (2026-08-28)
-            - Updated to upstream v1.0.0027
-            - Updated studio logo collection
-            - Enabled macOS compatibility for the XBT distribution
-        </news>
-            <size>67065715</size>
-            <path>resource.images.studios.coloured/resource.images.studios.coloured-1.0.0028.zip</path>
+            <news>&gt;
+v1.0.0029 (14.11.2026)
+- Logos requested by @kittmaster
+		</news>
+            <size>67079093</size>
+            <path>resource.images.studios.coloured/resource.images.studios.coloured-1.0.0029.zip</path>
         </extension>
     </addon>
     <addon id="script.bingie.helper" name="Bingie Helper" version="1.1.2" provider-name="cartman.dos, matke">
@@ -344,7 +352,7 @@
             <path>script.module.infotagger/script.module.infotagger-0.1.0.zip</path>
         </extension>
     </addon>
-    <addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.35">
+    <addon id="script.module.jurialmunkey" name="jurialmunkey common" provider-name="jurialmunkey" version="0.2.39">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.requests" version="2.9.1" />
@@ -359,8 +367,8 @@
             <assets>
                 <icon>icon.png</icon>
             </assets>
-            <size>55792</size>
-            <path>script.module.jurialmunkey/script.module.jurialmunkey-0.2.35.zip</path>
+            <size>56248</size>
+            <path>script.module.jurialmunkey/script.module.jurialmunkey-0.2.39.zip</path>
         </extension>
     </addon>
     <addon id="script.module.tmdbhelper.sync.gemini" version="1.0.3" name="TMDbHelper - Gemini" provider-name="jurialmunkey">
@@ -384,11 +392,11 @@
             <path>script.module.tmdbhelper.sync.gemini/script.module.tmdbhelper.sync.gemini-1.0.3.zip</path>
         </extension>
     </addon>
-    <addon id="script.module.tmdbhelper.sync.kodi" version="1.1.5" name="TMDbHelper Sync - Kodi" provider-name="jurialmunkey">
+    <addon id="script.module.tmdbhelper.sync.kodi" version="1.1.7" name="TMDbHelper Sync - Kodi" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.jurialmunkey" version="0.2.35" />
-            <import addon="plugin.video.themoviedb.helper" version="6.20.2" />
+            <import addon="plugin.video.themoviedb.helper" version="6.21.3" />
         </requires>
         <extension point="xbmc.python.script" library="resources/script.py" />
         <extension point="xbmc.python.module" library="resources/lib" />
@@ -401,15 +409,15 @@
                 <icon>resources/icon.png</icon>
                 <fanart>resources/fanart.jpg</fanart>
             </assets>
-            <size>96105</size>
-            <path>script.module.tmdbhelper.sync.kodi/script.module.tmdbhelper.sync.kodi-1.1.5.zip</path>
+            <size>96868</size>
+            <path>script.module.tmdbhelper.sync.kodi/script.module.tmdbhelper.sync.kodi-1.1.7.zip</path>
         </extension>
     </addon>
-    <addon id="script.module.tmdbhelper.sync.mdblist" version="1.1.4" name="TMDbHelper Sync - MDbList" provider-name="jurialmunkey">
+    <addon id="script.module.tmdbhelper.sync.mdblist" version="1.1.4+signde.1" name="TMDbHelper Sync - MDbList" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.jurialmunkey" version="0.2.35" />
-            <import addon="plugin.video.themoviedb.helper" version="6.20.2" />
+            <import addon="plugin.video.themoviedb.helper" version="6.21.3" />
         </requires>
         <extension point="xbmc.python.script" library="resources/script.py" />
         <extension point="xbmc.python.module" library="resources/lib" />
@@ -422,15 +430,15 @@
                 <icon>resources/icon.png</icon>
                 <fanart>resources/fanart.jpg</fanart>
             </assets>
-            <size>478088</size>
-            <path>script.module.tmdbhelper.sync.mdblist/script.module.tmdbhelper.sync.mdblist-1.1.4.zip</path>
+            <size>478143</size>
+            <path>script.module.tmdbhelper.sync.mdblist/script.module.tmdbhelper.sync.mdblist-1.1.4+signde.1.zip</path>
         </extension>
     </addon>
-    <addon id="script.module.tmdbhelper.sync.trakt" version="1.2.8" name="TMDbHelper Sync - Trakt" provider-name="jurialmunkey">
+    <addon id="script.module.tmdbhelper.sync.trakt" version="1.2.9" name="TMDbHelper Sync - Trakt" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.1" />
             <import addon="script.module.jurialmunkey" version="0.2.35" />
-            <import addon="plugin.video.themoviedb.helper" version="6.20.5" />
+            <import addon="plugin.video.themoviedb.helper" version="6.22.0" />
         </requires>
         <extension point="xbmc.python.script" library="resources/script.py" />
         <extension point="xbmc.python.module" library="resources/lib" />
@@ -443,8 +451,8 @@
                 <icon>resources/icon.png</icon>
                 <fanart>resources/fanart.jpg</fanart>
             </assets>
-            <size>1368745</size>
-            <path>script.module.tmdbhelper.sync.trakt/script.module.tmdbhelper.sync.trakt-1.2.8.zip</path>
+            <size>1369448</size>
+            <path>script.module.tmdbhelper.sync.trakt/script.module.tmdbhelper.sync.trakt-1.2.9.zip</path>
         </extension>
     </addon>
     <addon id="script.module.tmdbhelper.sync.tvdb" version="1.0.3" name="TMDbHelper - TVDb" provider-name="jurialmunkey">
@@ -533,7 +541,7 @@
             <path>script.skinhelper/script.skinhelper-0.0.4.zip</path>
         </extension>
     </addon>
-    <addon id="script.skinvariables" version="2.2.14" name="Skin Variables" provider-name="jurialmunkey">
+    <addon id="script.skinvariables" version="2.3.2" name="Skin Variables" provider-name="jurialmunkey">
         <requires>
             <import addon="xbmc.python" version="3.0.0" />
             <import addon="script.module.jurialmunkey" version="0.2.28" />
@@ -561,8 +569,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>291180</size>
-            <path>script.skinvariables/script.skinvariables-2.2.14.zip</path>
+            <size>358405</size>
+            <path>script.skinvariables/script.skinvariables-2.3.2.zip</path>
         </extension>
     </addon>
     <addon id="script.texturemaker" version="0.2.11" name="Texture Maker" provider-name="jurialmunkey">
@@ -776,16 +784,17 @@
             <path>skin.arctic.fuse.2/skin.arctic.fuse.2-108.2.12.12.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="73.3.4.18">
+    <addon id="skin.arctic.fuse.3" name="Arctic Fuse 3 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="73.3.5.2">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
-            <import addon="script.skinvariables" version="2.2.13" />
+            <import addon="script.skinvariables" version="2.3.2" />
             <import addon="script.texturemaker" version="0.2.9" />
-            <import addon="plugin.video.themoviedb.helper" version="6.19.2" />
+            <import addon="plugin.video.themoviedb.helper" version="6.22.0" />
             <import addon="resource.images.weathericons.white" version="0.0.1" />
             <import addon="resource.images.arctic.splash" version="1.1.0" />
             <import addon="resource.images.arctic.weather" version="1.0.4" />
             <import addon="resource.images.studios.coloured" version="0.0.1" />
+            <import addon="resource.images.arctic.backgrounds.surrealist" version="1.0.0" />
             <import addon="resource.font.robotocjksc" version="0.0.3" />
             <import addon="script.signde.tinyppi" version="10.2.7.3" />
             <import addon="resource.images.mediaflags.signde" version="1.0.0" />
@@ -816,6 +825,7 @@
             <forum />
             <source />
             <news>
+            [I][COLOR FFFF9800]v73.3.5.2-omega[/COLOR][/I][CR]- Updated to upstream v3.5.2.[CR][CR]
             [I][COLOR FFFF9800]v73.3.4.18-omega[/COLOR][/I][CR]- Updated to upstream v3.4.18.[CR][CR]
             [I][COLOR FFFF9800]v73.3.4.15-omega[/COLOR][/I][CR]- Fixed missing boxes around infoline details.[CR][CR]
             [I][COLOR FFFF9800]v72.3.4.15-omega[/COLOR][/I][CR]- Updated to upstream v3.4.15.[CR][CR]
@@ -863,8 +873,8 @@
                 <icon>icon.png</icon>
                 <fanart>fanart.jpg</fanart>
             </assets>
-            <size>57395335</size>
-            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-73.3.4.18.zip</path>
+            <size>56764348</size>
+            <path>skin.arctic.fuse.3/skin.arctic.fuse.3-73.3.5.2.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.horizon.2" name="Arctic Horizon 2 (avdvplus/p3i)" provider-name="jurialmunkey, jamal2362, signde" version="64.0.8.30">
@@ -904,7 +914,7 @@
             <path>skin.arctic.horizon.2/skin.arctic.horizon.2-64.0.8.30.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (avdvplus/p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="69.1.0.54">
+    <addon id="skin.arctic.zephyr.2.resurrection.mod" name="Arctic: Zephyr 2 - Resurrection (avdvplus/p3i)" provider-name="jurialmunkey, pkscout, heppen, jamal2362" version="69.1.0.58">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinshortcuts" />
@@ -921,6 +931,20 @@
             <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
         </extension>
         <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+            <forum>https://forum.kodi.tv/showthread.php?tid=362941</forum>
+            <source>https://github.com/DenDyGH/skin.arctic.zephyr.2.resurrection.mod</source>
+            <assets>
+                <icon>resources/icon.png</icon>
+                <fanart>resources/fanart.jpg</fanart>
+                <screenshot>resources/screenshot-01.jpg</screenshot>
+                <screenshot>resources/screenshot-02.jpg</screenshot>
+                <screenshot>resources/screenshot-03.jpg</screenshot>
+                <screenshot>resources/screenshot-04.jpg</screenshot>
+                <screenshot>resources/screenshot-05.jpg</screenshot>
+                <screenshot>resources/screenshot-06.jpg</screenshot>
+            </assets>
             <summary lang="de">Klar, minimalistisch, elegant, einfach, leicht</summary>
             <summary lang="en">Clean, minimal, elegant, simple, light.</summary>
             <summary lang="en_AU">Clean, minimal, elegant, simple, light.</summary>
@@ -941,21 +965,8 @@
             <description lang="es">Esta es una ligera modificación de Arctic Zephyr 2 realizada por heppen. Arctic Zephyr 2 es un skin minimalista creado por jurialmunkey y adaptado para funcionar con Kodi 19 Matrix por pkscout. El diseño es simple para que el usuario pueda centrarse en su contenido multimedia.</description>
             <description lang="pl">Jest to modyfikacja skórki Arctic Zephyr 2 autorstwa heppen. Arctic Zephyr 2 jest minimalistyczną skórką stworzoną przez jurialmunkey i zmodowaną do pracy z Kodi 19 Matrix przez pkscout. Skórka została zaprojektowana jako prosta, aby użytkownik mógł skupić się na swojej zawartości multimedialnej.</description>
             <description lang="zh-CN">这是由 heppen 制作的 Arctic Zephyr 2 皮肤的轻量修改版。Arctic Zephyr 2 是一款由 jurialmunkey 创作的极简风格皮肤，经 pkscout 适配后可用于 Kodi 19 Matrix 版本。该皮肤采用简约设计，旨在让用户能专注于自身的媒体内容。</description>
-            <platform>all</platform>
-            <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
-            <forum>https://forum.kodi.tv/showthread.php?tid=362941</forum>
-            <source>https://github.com/DenDyGH/skin.arctic.zephyr.2.resurrection.mod</source>
-            <assets>
-                <icon>icon.png</icon>
-                <fanart>fanart.jpg</fanart>
-                <screenshot>resources/screenshot-01.jpg</screenshot>
-                <screenshot>resources/screenshot-02.jpg</screenshot>
-                <screenshot>resources/screenshot-03.jpg</screenshot>
-                <screenshot>resources/screenshot-04.jpg</screenshot>
-                <screenshot>resources/screenshot-05.jpg</screenshot>
-                <screenshot>resources/screenshot-06.jpg</screenshot>
-            </assets>
             <news>
+            [I][COLOR FFFF9800]v69.1.0.58[/COLOR][/I][CR]- Updated to upstream v1.0.58.[CR][CR]
             [I][COLOR FFFF9800]v69.1.0.54[/COLOR][/I][CR]- Fixed missing PPI and VS10 button icons during playback.[CR][CR]
             [I][COLOR FFFF9800]v68.1.0.54[/COLOR][/I][CR]- Updated to upstream v1.0.54.[CR][CR]
             [I][COLOR FFFF9800]v68.1.0.53[/COLOR][/I][CR]- Updated to upstream v1.0.53.[CR][CR]
@@ -975,11 +986,11 @@
 
             [I][COLOR FFFF9800]v61.1.0.51[/COLOR][/I][CR]- Restored p3i support on Kodi Omega[CR]- Minor PPI fixes
         </news>
-            <size>17320851</size>
-            <path>skin.arctic.zephyr.2.resurrection.mod/skin.arctic.zephyr.2.resurrection.mod-69.1.0.54.zip</path>
+            <size>16838771</size>
+            <path>skin.arctic.zephyr.2.resurrection.mod/skin.arctic.zephyr.2.resurrection.mod-69.1.0.58.zip</path>
         </extension>
     </addon>
-    <addon id="skin.arctic.zephyr.martian.signde" version="11.3.20.7" name="Arctic: Zephyr - Martian (avdvplus/p3i)" provider-name="jurialmunkey, beatmasterrs, martian89, jamal2362, signde">
+    <addon id="skin.arctic.zephyr.martian.signde" version="11.3.20.11" name="Arctic: Zephyr - Martian (avdvplus/p3i)" provider-name="jurialmunkey, beatmasterrs, martian89, jamal2362, signde">
         <requires>
             <import addon="xbmc.gui" version="5.17.0" />
             <import addon="script.skinvariables" version="2.1.33" />
@@ -1012,6 +1023,33 @@
                 <screenshot>resources/screenshot-10.jpg</screenshot>
             </assets>
             <news>
+[B]11.3.20.11[/B]
+- Updated to upstream Martian v3.20.11
+
+[B]3.20.11[/B]
+- Added missing "Refresh channel icons" button to PVR channel manager
+- Fixed button labels in PVR channel manager
+- Added parental locked icon in PVR channel manager
+
+[B]3.20.10[/B]
+- Pre-load cast and fanart in video info dialog
+
+[B]3.20.9[/B]
+- Show last played date in lists sorted by last played
+- Adjusted dark OSD background colour
+- Hide side OSD when PVR channel guide, channel list or info dialog are visisble
+- Fixed layout of slider dialog to avoid overlap with notifications and OSD clock
+- Fixed background colour of notifications, slider and clock in OSD
+- Fixed return to initial info dialog for local sets,seasons and episodes
+- Fixed season library indicator for TMDbHelper 6.21.2
+
+[B]3.20.8[/B]
+- Code cleanup
+- Removed border of focused epg item
+- Fixed encoding of wikipedia and youtube urls
+- Fixed youtube option in video info settings
+- Fixed youtube video sublabel in info dialogs
+
 [B]11.3.20.7[/B]
 - Updated to upstream Martian v3.20.7
 
@@ -1320,8 +1358,8 @@
             <description lang="en_US">Arctic: Zephyr - Martian is based on the original Arctic: Zephyr skin, created by jurialmunkey and it's extension by beatmasterRS. Arctic focuses on being simple, clean and minimalistic with a light spin.</description>
             <description lang="fr">Arctic: Zephyr - Martian est basé sur le skin original Arctic: Zephyr, créé par jurialmunkey et son extension par beatmasterRS. Arctic se focalise sur le fait d'être simple, claire et minimaliste.</description>
             <description lang="zh_CN">Arctic: Zephyr - Martian 是基于 jurialmunkey 所创 Arctic 皮肤的第三个版本，以及 beatmasterRS 对该皮肤的扩展版本。Arctic 系列皮肤主打简洁、干净且简约的风格，并略带独特设计巧思。</description>
-            <size>51548565</size>
-            <path>skin.arctic.zephyr.martian.signde/skin.arctic.zephyr.martian.signde-11.3.20.7.zip</path>
+            <size>51547869</size>
+            <path>skin.arctic.zephyr.martian.signde/skin.arctic.zephyr.martian.signde-11.3.20.11.zip</path>
         </extension>
     </addon>
     <addon id="skin.arctic.zephyr.mod" version="66.3.0.3" name="Arctic: Zephyr - Reloaded (avdvplus/p3i)" provider-name="jurialmunkey, beatmasterrs, jamal2362">

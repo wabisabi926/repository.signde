@@ -19,6 +19,27 @@ See the [Kodi forum thread](https://forum.kodi.tv/showthread.php?tid=388348) for
 
 ## Changes
 
+- November 16th 2026
+    - Arctic Fuse 3 v73.3.5.2-omega
+        - Updated to upstream v3.5.2
+    - Arctic Fuse 3 v73.3.5.2-piers
+        - Updated to upstream v3.5.2
+    - Arctic Zephyr Martian v11.3.20.11
+        - Updated to upstream Martian v3.20.11
+    - Arctic Zephyr 2 Resurrection v69.1.0.58
+        - Updated to upstream Omega v1.0.58
+    - TMDb Helper v6.22.1
+        - Updated to upstream v6.22.1
+        - Updated the Trakt, MDBList, and Kodi providers
+    - Skin Variables v2.3.2
+        - Updated to upstream v2.3.2
+    - jurialmunkey Common Module v0.2.39
+        - Updated to upstream v0.2.39
+    - Arctic Backgrounds - Surrealist v1.0.2
+        - Added artwork used by Arctic Fuse 3
+    - Colored Studio Icons v1.0.0029
+        - Updated to upstream v1.0.0029
+
 - November 10th 2026
     - Arctic Zephyr 2 Resurrection v69.1.0.54
         - Fixed missing PPI and VS10 button icons during playback

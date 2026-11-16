@@ -114,3 +114,6 @@
 [submodule "addons/script.module.tmdbhelper.sync.kodi"]
 	path = addons/script.module.tmdbhelper.sync.kodi
 	url = https://github.com/jurialmunkey/script.module.tmdbhelper.sync.kodi.git
+[submodule "addons/resource.images.arctic.backgrounds.surrealist"]
+	path = addons/resource.images.arctic.backgrounds.surrealist
+	url = https://github.com/jurialmunkey/resource.images.arctic.backgrounds.surrealist.git
